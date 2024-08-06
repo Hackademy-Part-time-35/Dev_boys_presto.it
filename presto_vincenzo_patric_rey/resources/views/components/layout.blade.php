@@ -17,7 +17,7 @@
 
         </div>
 
-    <div class="mt-5 col-12 d-flex ">
+    <div class=" mt-5 col-12 d-flex ">
         <x-footer /> 
     </div>    
 </body>

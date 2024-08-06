@@ -10,17 +10,21 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Account
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/register">Register</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="/register">Registrati</a></li>
+
+              @auth
+              <li><hr class="dropdown-divider"></li>              
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+              @endauth
+              
             </ul>
           </li>
           <li class="nav-item">

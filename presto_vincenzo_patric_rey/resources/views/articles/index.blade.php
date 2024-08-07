@@ -28,7 +28,7 @@
                         <td>{{ $article->id }}</td>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->category}}</td>
-                        <td>
+                        <td class="text-end">
                             <a href="{{route('articles.edit',$article)}}" class=" btn btn-outline-dark">Modifica</a>
                             
                             <form class=" d-inline ms-2" action="{{route('articles.destroy',$article)}}" method="POST">

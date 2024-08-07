@@ -8,12 +8,12 @@
         
    
 
-    <div class="mt-5">
+    <div class="mt-5>
 
        
         <form action="{{route('articles.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
-          <div class="col-lg-8 mx-auto  ">
+          <div class="col-lg-8 col-sm-8 mx-auto  ">
           
             
                 <div class="row g-3 rounded-2 shadow-lg mt-5" >

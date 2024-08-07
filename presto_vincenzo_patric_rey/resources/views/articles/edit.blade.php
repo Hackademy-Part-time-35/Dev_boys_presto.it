@@ -8,13 +8,13 @@
         
    
 
-    <div class="mt-5">
+    <div class="mt-5 ">
 
        
-        <form action="{{route('articles.update',$articol)}}" method="POST" enctype="multipart/form-data">
+        <form action="{{route('articles.update',$article)}}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
-          <div class="col-lg-8 mx-auto  ">
+          <div class="col-lg-8 col-sm-8 mx-auto  ">
           
             
                 <div class="row g-3 rounded-2 shadow-lg mt-5" >
@@ -33,7 +33,7 @@
                     </div> 
 
                     <div class="col-12">
-                        <label for="price">Email</label>
+                        <label for="price">Prezzo</label>
                         <input type="number" name="price" id="price" class="form-control"value="{{ old('price',$article->price) }}">
                         @error('price') <span class="text-danger small">{{ $message }}</span> @enderror
                     </div>

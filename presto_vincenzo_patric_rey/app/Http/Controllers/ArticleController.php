@@ -60,7 +60,8 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        return view('articles.edit',['articol'=>$article]);
+        return view('articles.edit',['article'=>$article,
+    'title'=>'Modifica Articolo']);
     }
 
     /**

@@ -9,4 +9,8 @@ class PublicController extends Controller
     public function homepage(){
         return view ('homepage');
     }
+
+    public function account(){
+        return view ('auth.account');
+    }
 }

@@ -2,7 +2,7 @@
     height: 10rem;
 }
 
-a{
+button > a{
     all: unset;
 }
 

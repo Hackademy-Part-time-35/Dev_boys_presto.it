@@ -7,25 +7,41 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<<<<<<< HEAD
              Account
+=======
+              Account
+>>>>>>> 191566bac5b38a153a2ce908ccd505c3ab215e6f
             </a>
             <ul class="dropdown-menu">
+              
+
+              @auth
+              <li><a class="dropdown-item" href="/account">Pagina personale</a></li>
+              <li><hr class="dropdown-divider"></li>              
+              <li>
+                <form action="/logout" method="POST">
+                  @csrf
+                  <button class="dropdown-item" type="submit">Logout</button>
+                </form>
+              </li>
+              @else
+
               <li><a class="dropdown-item" href="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/register">Register</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="/register">Registrati</a></li>
+
+              @endauth
+
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+         
         </ul>
         
       </div>

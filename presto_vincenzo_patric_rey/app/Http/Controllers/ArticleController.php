@@ -11,8 +11,11 @@ class ArticleController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        return view('articles.index');
+    {   $title='Elenco Articoli';
+        return view('articles.index',[
+            'title'=>$title,
+            'articles' =>Article::all(),
+        ]);
     }
 
     /**
@@ -20,7 +23,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('articles.create');
     }
 
     /**

@@ -14,11 +14,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-<<<<<<< HEAD
-             Account
-=======
               Account
->>>>>>> 191566bac5b38a153a2ce908ccd505c3ab215e6f
             </a>
             <ul class="dropdown-menu">
               

@@ -1,3 +1,11 @@
 .altezza {
     height: 10rem;
 }
+
+a{
+    all: unset;
+}
+
+p{
+    margin: 0;
+}

@@ -5,7 +5,7 @@
 
     @auth
     <h3>Ciao {{ auth()->user()->name }} ora puoi inserire il tuo annuncio:</h3>
-    <button type="button" class="btn btn-primary">Crea</button>
+    <button type="button" class="btn btn-primary"><a href="/articles/create">Crea annuncio</a></button>
     @else
     <h3>Vuoi aggiungere un annuncio? <br></h3>
     <p>Prima fai il login:</p>

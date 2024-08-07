@@ -28,9 +28,14 @@
                         <td>{{ $article->id }}</td>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->category}}</td>
-
-                        <td class="text-end">
-                          
+                        <td>
+                            <a href="{{route('articles.edit',$article)}}" class=" btn btn-outline-dark">Modifica</a>
+                            
+                            <form class=" d-inline ms-2" action="{{route('articles.destroy',$article)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class=" btn btn-danger">Cancella</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach
@@ -38,7 +43,7 @@
             </table>
         </div>
         <div class="col-lg-6 text-end">
-            <a href="" class="btn btn-warning">Crea Articolo</a>
+            <a href="{{ route('articles.create') }}" class="btn btn-warning">Crea Articolo</a>
         </div>
     </div>
    

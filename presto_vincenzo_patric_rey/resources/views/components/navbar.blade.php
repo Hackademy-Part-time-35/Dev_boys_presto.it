@@ -10,17 +10,15 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Link</a>
+            <a class="nav-link" href="{{ route('articles.index') }}">Elenco Articoli</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-<<<<<<< HEAD
-             Account
-=======
+             
               Account
->>>>>>> 191566bac5b38a153a2ce908ccd505c3ab215e6f
             </a>
-            <ul class="dropdown-menu">
+            
+        <ul class="dropdown-menu">
               
 
               @auth

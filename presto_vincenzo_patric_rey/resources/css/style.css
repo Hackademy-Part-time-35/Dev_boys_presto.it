@@ -9,3 +9,65 @@ button > a{
 p{
     margin: 0;
 }
+
+
+
+/*home*/
+
+
+/* base style*/
+body{font-family: "EB Garamond", serif; font-size: 16px;}
+
+
+a{text-decoration: none;}
+
+h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
+
+.big-text{font-size: 70px; font-weight:900 ;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-decoration: uppercase; font-size:20px ; font-weight: bold;}
+
+
+.button{padding: 18px 20px; background: #681d0e;
+color: #fff; display: inline-block;
+border-radius: 6px;
+}
+
+.hamburger{display:none;}
+
+@media(max-width: 768px){
+
+    .big-text{font-size:40px ;}
+    .cta{display: none;}
+
+    .menu{position:absolute ; top: 0; right: -100%; background: rgb(25, 25, 25);
+    height: 100vh;
+    padding-top: 80px;}
+    .menu li {display:block;}
+   
+   
+
+
+}
+
+/* Header*/
+
+.header{
+   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+
+    display: flex;
+    max-width:1350px;
+
+    
+
+
+}

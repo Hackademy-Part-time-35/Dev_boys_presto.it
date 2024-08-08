@@ -16,8 +16,9 @@
                 <thead>
                     <tr class=" table-danger">
                         <th>#</th>
-                        <th>title</th>
-                        <th>category</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Price</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -28,14 +29,9 @@
                         <td>{{ $article->id }}</td>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->category}}</td>
+                        <td>{{ $article->price}}</td>
                         <td class="text-end">
-                            <a href="{{route('articles.edit',$article)}}" class=" btn btn-outline-dark">Modifica</a>
-                            
-                            <form class=" d-inline ms-2" action="{{route('articles.destroy',$article)}}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class=" btn btn-danger">Cancella</button>
-                            </form>
+                          
                         </td>
                     </tr>
                 @endforeach

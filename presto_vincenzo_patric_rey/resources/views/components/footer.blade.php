@@ -1,8 +1,7 @@
-<div class="card col-12 m-1 badge-dark   ">
+<div class="card col-12 m-1 badge-dark me-12   ">
     <h5 class="card-header">Contattaci</h5>
     <div class="card-body">
       <h5 class="card-title">Sende:Livorno </h5>
-      <a href="">Presto.It@gmail.com</a>
       <p>
         <h3>O Puoi chiamare:</h3>
         <ul class="mt-3 ">

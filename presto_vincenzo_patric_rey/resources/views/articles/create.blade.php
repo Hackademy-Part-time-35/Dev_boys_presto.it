@@ -1,4 +1,4 @@
-<x-layout title='Naw Article'>
+{{-- <x-layout title='Naw Article'>
     
 
         <h1 class="text-center mt-2" >{{$title}}</h1>
@@ -57,5 +57,23 @@
         
 
 
+    </div>
+</x-layout> --}}
+
+<x-layout>
+
+    <div class="container pt-5">
+        <div class="justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="display-4 pt-5">
+                    Publica un articolo
+                </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center height-custom">
+            <div class="col-12 col-md-6">
+                <livewire:create-article-form />
+            </div>
+        </div>
     </div>
 </x-layout>

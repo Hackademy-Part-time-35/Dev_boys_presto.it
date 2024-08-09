@@ -6,7 +6,7 @@
             </div>
            
             <div class="col-lg-6 text-end">
-                <a href="" class="btn btn-warning">Torna alla Home</a>
+                <a href="/" class="btn btn-warning">Torna alla Home</a>
             </div>
         </div>
        
@@ -28,7 +28,7 @@
                     <tr>
                         <td>{{ $article->id }}</td>
                         <td>{{ $article->title }}</td>
-                        <td>{{ $article->category}}</td>
+                        <td>{{ $article->category->name}}</td>
                         <td>{{ $article->price}}</td>
                         <td class="text-end">
                           

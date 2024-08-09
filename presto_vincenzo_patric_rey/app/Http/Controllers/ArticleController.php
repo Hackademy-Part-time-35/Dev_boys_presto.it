@@ -6,11 +6,20 @@ use App\Http\Requests\StoreArticlesRequest;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Routing\Controllers\HasMiddleware;
+
+class ArticleController extends Controller implements HasMiddleware
 {
-    /**
-     * Display a listing of the resource.
-     */
+    // metodo che consente solo ai registrati di creare un articolo
+    public static function middleware(): array
+    {
+        return[
+            new Middleware('auth', only: ['create']),
+        ];
+    }
+
+
     public function index()
     {   $title='Elenco Articoli';
         return view('articles.index',[
@@ -23,8 +32,10 @@ class ArticleController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {   $title ='Creazione articoli';
-        return view('articles.create',['title'=>$title]);
+    {  
+         $title ='Creazione articoli';
+        // return view('articles.create',['title'=>$title]);
+        return view('articles.create', ['categories' => \App\Models\Category::all(), 'title' => $title]);
     }
 
     /**
@@ -33,7 +44,7 @@ class ArticleController extends Controller
     public function store(StoreArticlesRequest $request)
 
     {
-       
+
 
     }
 

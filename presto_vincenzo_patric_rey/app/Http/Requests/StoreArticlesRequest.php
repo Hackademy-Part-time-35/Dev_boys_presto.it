@@ -24,7 +24,7 @@ class StoreArticlesRequest extends FormRequest
         return [
             'title' => 'required|max:50',
             'price' => 'required|max:50',
-            'category' => 'required|max:50',
+            'categories' => 'required|max:50',
             'description' => 'required|max:255',
             
         ];

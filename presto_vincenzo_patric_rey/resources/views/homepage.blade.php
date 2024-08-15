@@ -19,12 +19,19 @@
     @endauth
 
     <div class="col-12 mt-5 d-flex row max-auto" >
-        @foreach($articles as $article)
-            <div class="col-12 col-md-3">
-                <x-card :article="$article"/>
-            </div>
-       
-       @endforeach
+       @forelse ($articles as $article)
+          <div class="col-12 col-md-3">
+            <x-card :article="$article" />
+          </div>
+
+       @empty
+          <div class="col-12">
+            <h3 class="text-center">
+                non ci sono articoli pubblicati
+            </h3>
+          </div>
+           
+       @endforelse
     </div>
 
 </x-layout>

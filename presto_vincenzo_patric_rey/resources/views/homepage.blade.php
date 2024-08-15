@@ -19,12 +19,27 @@
     @endauth
 
     <div class="col-12 mt-5 d-flex row max-auto" >
-        @foreach($articles as $article)
+        @forelse ($articles as $article)
             <div class="col-12 col-md-3">
-                <x-card :article="$article"/>
+                <div class="card mx-auto card-w shadow text-center mb-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="Immagine dell'articolo {{ $article->title}}">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ $article->title}}</h5>
+                      <h6 class="card-subtitle text-body-secondary">{{$article->price}} $ </h6>
+                      <div class="d-flex justify-content-evenly align-item-center mt-5">
+                        <a href="#" class="btn btn-primary">Dettaglio</a>
+                        <a href="" class="btn btn-outline-info">Categoria</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
-       
-       @endforeach
+        @empty
+            <div class="col-12">
+                <h3 class="text-center">
+                    Non sono ancora stati creati articoli
+                </h3>
+            </div>
+        @endforelse
     </div>
 
 </x-layout>

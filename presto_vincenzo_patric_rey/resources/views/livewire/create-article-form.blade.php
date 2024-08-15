@@ -8,21 +8,21 @@
 
     <div class="mb-3">
         <label for="title" class="form-label">Titolo</label>
-        <input type="text" class="form-control" @error('title') is-invalid @enderror id="title" wire:model="title">
+        <input type="text" class="form-control" @error('title') is-invalid @enderror id="title" wire:model.blur="title">
         @error('title')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Descrizione</label>
-        <textarea id="description" cols="30" rows="10" class="form-control" @error('description') is-invalid @enderror wire:model="description"></textarea>
+        <textarea id="description" cols="30" rows="10" class="form-control" @error('description') is-invalid @enderror wire:model.blur="description"></textarea>
         @error('description')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">Prezzo</label>
-        <input type="text" class="form-control" @error('price') is-invalid @enderror id="price" wire:model="price">
+        <input type="text" class="form-control" @error('price') is-invalid @enderror id="price" wire:model.blur="price">
         @error('price')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror

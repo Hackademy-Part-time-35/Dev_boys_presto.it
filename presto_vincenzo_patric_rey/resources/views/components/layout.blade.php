@@ -11,7 +11,7 @@
 <body>
     <x-navbar />
 
-        <div class="min-vh-100 container-fluid">
+        <div class="min-vh-100 container-fluid mt-5 pt-5">
 
             {{$slot}}
 

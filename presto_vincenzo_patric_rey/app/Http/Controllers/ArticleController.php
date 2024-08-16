@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Routing\Controllers\Middleware;
 use Illuminate\Routing\Controllers\HasMiddleware;
+// use Illuminate\Paginator\Paginator;
 
 class ArticleController extends Controller implements HasMiddleware
 {
@@ -21,11 +22,9 @@ class ArticleController extends Controller implements HasMiddleware
 
 
     public function index()
-    {   $title='Elenco Articoli';
-        return view('articles.index',[
-            'title'=>$title,
-            'articles' =>Article::all(),
-        ]);
+    {
+        $articles = Article::paginate(2);
+        return view('articles.index', compact('articles'));
     }
 
     /**

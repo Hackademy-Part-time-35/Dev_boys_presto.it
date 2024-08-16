@@ -1,46 +1,30 @@
 <x-layout title='Elenco Articoli'>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>{{$title}}</h1>
-            </div>
-           
-            <div class="col-lg-6 text-end">
-                <a href="/" class="btn btn-warning">Torna alla Home</a>
+    {{-- @dd($articles); --}}
+    <div class="container-fluid">
+        <div class="row height-custom justify-content-center align-items-center text-center">
+            <div class="col-12">
+                <h1 class="display-1">Tutti gli articoli</h1>
             </div>
         </div>
-       
-
-        <div class="mt-5">
-            <table class="table table-bordered">
-                <thead>
-                    <tr class=" table-danger">
-                        <th>#</th>
-                        <th>Title</th>
-                        <th>Category</th>
-                        <th>Price</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                   
-                    @foreach($articles as $article)
-                    <tr>
-                        <td>{{ $article->id }}</td>
-                        <td>{{ $article->title }}</td>
-                        <td>{{ $article->category}}</td>
-                        <td>{{ $article->price}}</td>
-                        <td class="text-end">
-                          
-                        </td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-        </div>
-        <div class="col-lg-6 text-end">
-            <a href="{{ route('articles.create') }}" class="btn btn-warning">Crea Articolo</a>
+        <div class="row height-custom justify-content-center align-items-center py-5">
+            @forelse($articles as $article)
+                <div class="col-12 col-md-3">
+                    <x-card :title="$article->title"
+                            :price="$article->price"
+                         />
+                </div>
+            @empty
+                <div class="col-12">
+                    <h3 class="text-center">
+                        Non sono ancora stati creati articoli
+                    </h3>
+                </div>
+            @endforelse
         </div>
     </div>
-   
+    <div class="d-flex justify-content-center">
+        <div>
+            {{$articles->links()}}
+        </div>
+    </div>
 </x-layout>

@@ -19,21 +19,6 @@
     @endauth
 
     <div class="col-12 mt-5 d-flex row max-auto" >
-<<<<<<< HEAD
-       @forelse ($articles as $article)
-          <div class="col-12 col-md-3">
-            <x-card :article="$article" />
-          </div>
-
-       @empty
-          <div class="col-12">
-            <h3 class="text-center">
-                non ci sono articoli pubblicati
-            </h3>
-          </div>
-           
-       @endforelse
-=======
         @forelse ($articles as $article)
             <div class="col-12 col-md-3">
                 <div class="card mx-auto card-w shadow text-center mb-3" style="width: 18rem;">
@@ -42,7 +27,7 @@
                       <h5 class="card-title">{{ $article->title}}</h5>
                       <h6 class="card-subtitle text-body-secondary">{{$article->price}} $ </h6>
                       <div class="d-flex justify-content-evenly align-item-center mt-5">
-                        <a href="#" class="btn btn-primary">Dettaglio</a>
+                        <a href="{{ route('article.show', compact('article')) }}" class="btn btn-primary">Dettaglio</a>
                         <a href="" class="btn btn-outline-info">Categoria</a>
                       </div>
                     </div>
@@ -55,7 +40,7 @@
                 </h3>
             </div>
         @endforelse
->>>>>>> 84ea495d459193e2871e6a1657b199cc870ed375
+
     </div>
 
 </x-layout>

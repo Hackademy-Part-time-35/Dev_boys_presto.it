@@ -9,3 +9,5 @@ Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 Route::resource('articles',ArticleController::class);
 
 Route::get('/account',[PublicController::class, 'account'])->name('auth.account');
+
+Route::get('articles/{article}',[ArticleController::class, 'show'])->name('articles.show');

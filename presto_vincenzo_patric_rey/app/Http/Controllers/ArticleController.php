@@ -37,6 +37,8 @@ class ArticleController extends Controller implements HasMiddleware
         return view('articles.create', ['categories' => \App\Models\Category::all(), 'title' => $title]);
     }
 
+
+   
     /**
      * Store a newly created resource in storage.
      */
@@ -52,7 +54,7 @@ class ArticleController extends Controller implements HasMiddleware
      */
     public function show(StoreArticlesRequest $article)
     {
-        //
+        return view('articles.show', compact('article'));
     }
 
     /**

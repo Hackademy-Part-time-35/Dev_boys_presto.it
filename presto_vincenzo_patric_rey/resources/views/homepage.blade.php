@@ -20,7 +20,7 @@
 
     <div class="col-12 mt-5 d-flex row max-auto" >
         @forelse ($articles as $article)
-            <div class="col-12 col-md-3">
+            {{-- <div class="col-12 col-md-3">
                 <div class="card mx-auto card-w shadow text-center mb-3" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="Immagine dell'articolo {{ $article->title}}">
                     <div class="card-body">
@@ -32,7 +32,8 @@
                       </div>
                     </div>
                   </div>
-            </div>
+            </div> --}}
+            <x-card :article="$article" />
         @empty
             <div class="col-12">
                 <h3 class="text-center">

@@ -10,7 +10,7 @@ class Article extends Model
 {
     protected $fillable = ['title', 'description','price', 'category_id', 'user_id'];
 
-    public function user(): BelongTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }

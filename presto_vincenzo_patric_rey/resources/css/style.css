@@ -1,7 +1,8 @@
 :root{
     --myBackgroundPrimary: #ddf0f9;
     --myTextPrimary: #1e191b;
-    --myTextSecondary: #ea573a; 
+    --myTextSecondary: #ea573a;
+    --myTextTerziary: #f9b2a4;
 
 }
 
@@ -16,6 +17,7 @@
         font-style: normal;
         letter-spacing: 0.2rem;
         font-size: 2rem;
+        color: var(--myTextPrimary);
 }
 
 .font2 {
@@ -47,6 +49,16 @@
     color: var(--myTextSecondary);
 }
 
+.fontBenvenuto2 {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    color: var(--myTextPrimary);
+}
+
 .altezza {
     height: 10rem;
 }
@@ -58,6 +70,21 @@ button > a{
 
 
 /*home*/
+
+.bottone {
+    background-color: var(--myTextSecondary);
+    border-radius: 0;
+}
+
+.bottone2 {
+    background-color: var(--myTextPrimary);
+    border-radius: 0;
+}
+
+.btn {
+    --bs-btn-hover-border-color: var(--myTextPrimary);
+    --bs-btn-color: white;
+}
 
 
 /* base style*/
@@ -101,17 +128,33 @@ a{text-decoration: none;}
 
 /* Navbar */
 
-.myNav {
-    gap: 7rem;
+.navLinks {
+    color: var(--myTextPrimary);
+
+}
+
+:hover.navLinks {
+    
+    background-color: #f0f8fc;
+
+}
+
+:active.navLinks {
+    background-color: var(--myTextSecondary);
 }
 
 .myNavButton {
     background-color: var(--myTextSecondary);
+
 }
 
-.myNavButton2 {
-    background-color: var(--myTextPrimary);
-    color: white;
+.navbar {
+    --bs-navbar-color: white;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--myTextSecondary);
+    --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
 }
 
 

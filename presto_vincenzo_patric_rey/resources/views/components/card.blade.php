@@ -6,8 +6,8 @@
       <h5 class="card-title">{{$article->title}}</h5>
       <h6 class="card-subtitle text-body-secondary">{{$article->price}} </h6>
       <div class="d-flex justify-content-evenly align-item-center mt-5">
-        <a href="#" class="btn btn-primary">Dettaglio</a>
-        <a href="" class="btn btn-outline-info">Categoria</a>
+        <a href="#" class="btn bottone">Dettaglio</a>
+        <a href="" class="btn bottone2">Categoria</a>
       </div>
     </div>
 </div>

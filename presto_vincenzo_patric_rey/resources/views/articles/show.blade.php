@@ -6,7 +6,7 @@
 
 
  <div class="container">
-  <div class="row height-custom justify-content-center align-items-center text-cente h-75 d-inline-block">
+  <div class="row height-custom justify-content-center align-items-center text-cente h-75 d-inline-blockgit">
     <div class="col-12">
        <h1 class=" display-4">Dettaglio dell'articolo: {{$article->title}}</h1>
     </div>

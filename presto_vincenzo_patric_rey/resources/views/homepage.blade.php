@@ -11,8 +11,20 @@
         <h1 class="fontBenvenuto mt-5 mb-0">BENVENUTO</h1>
         <p class="fontBenvenuto fs-1 mb-5">in </span><span class="font1 border">PRESTO.it<p/>
     </div>
-    @endauth
+    @endauth 
+   
+        @if (session()->has('errorMessage'))
+        <div class="aletr alert-danger text-center shadow rounded w-50">
+            {{session('errorMessage')}}
+        </div>
+        @endif
 
+        @if (session()->has('message'))
+        <div class="aletr alert-danger text-center shadow rounded w-50">
+            {{session('message')}}
+        </div>
+        @endif
+            
     <div class="container-fluid">
         <div class="row">
             <div class="col-4">

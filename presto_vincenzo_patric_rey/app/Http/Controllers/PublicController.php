@@ -15,4 +15,9 @@ class PublicController extends Controller
     public function account(){
         return view ('auth.account');
     }
+
+    public function categoryArticles (){
+        return view ('category.category');
+    }
 }
+

@@ -7,6 +7,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Presto</title>
     @vite (['resource/css/app.css', 'resource/js/app.js'])
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <x-navbar />

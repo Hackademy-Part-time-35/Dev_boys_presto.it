@@ -1,3 +1,52 @@
+:root{
+    --myBackgroundPrimary: #ddf0f9;
+    --myTextPrimary: #1e191b;
+    --myTextSecondary: #ea573a; 
+
+}
+
+.sfondo {
+    background-color: var(--myBackgroundPrimary);
+}
+
+.font1 {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+}
+
+.font2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    color: var(--myTextSecondary);
+}
+
+
+.fontIt {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+}
+
+.fontBenvenuto {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    color: var(--myTextSecondary);
+}
+
 .altezza {
     height: 10rem;
 }
@@ -6,22 +55,23 @@ button > a{
     all: unset;
 }
 
-p{
-    margin: 0;
-}
-
 
 
 /*home*/
 
 
 /* base style*/
-body{font-family: "EB Garamond", serif; font-size: 16px;}
+body    {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--myBackgroundPrimary);
+    color: var(--myTextPrimary);
+}
 
 
 a{text-decoration: none;}
-
-h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
 
 .big-text{font-size: 70px; font-weight:900 ;}
 .med-text{font-size: 40px;}
@@ -31,10 +81,6 @@ h1,h2,h3,h4,h5,p{color: #000; padding-bottom: 30px;}
 .intro-text{text-decoration: uppercase; font-size:20px ; font-weight: bold;}
 
 
-.button{padding: 18px 20px; background: #681d0e;
-color: #fff; display: inline-block;
-border-radius: 6px;
-}
 
 .hamburger{display:none;}
 
@@ -53,6 +99,22 @@ border-radius: 6px;
 
 }
 
+/* Navbar */
+
+.myNav {
+    gap: 7rem;
+}
+
+.myNavButton {
+    background-color: var(--myTextSecondary);
+}
+
+.myNavButton2 {
+    background-color: var(--myTextPrimary);
+    color: white;
+}
+
+
 /* Header*/
 
 .header{
@@ -62,7 +124,7 @@ border-radius: 6px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 30px;
+   
 
     display: flex;
     max-width:1350px;

@@ -1,13 +1,18 @@
 
 <x-layout>
-
-    <h1 class="display-3 fw-bold text-primary text-center mb-5">Benvenuto in Presto.it</h1>
+    
+    @auth
+    <h1 class="fontBenvenuto mt-5 mb-0">Benvenuto, </h1>
+    <p class="font2 mt-0 mb-5">{{ auth()->user()->name }}</p>
+    @else
+    <h1 class="fontBenvenuto my-4">Benvenuto in <span class="font1">PRESTO.it<span/></h1>
+    @endauth
 
     @auth
     <h3>Ciao {{ auth()->user()->name }} ora puoi inserire il tuo annuncio:</h3>
     <button type="button" class="btn btn-primary"><a href="/articles/create">Crea annuncio</a></button>
     @else
-    <h3>Vuoi aggiungere un annuncio? <br></h3>
+    <h3>Vuoi aggiungere un annuncio?</h3>
     <p>Prima fai il login:</p>
     <button type="button" class="btn btn-primary">
         <a href="\login" >Login</a>

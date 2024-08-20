@@ -1,29 +1,28 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-primary fixed-top">
+<nav class="navbar navbar-expand-lg border-bottom sfondo fixed-top py-3">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Presto.it</a>
+    <a class="navbar-brand font1" href="#">PRESTO.<span class="fontIt">it</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
+    <div class="collapse navbar-collapse myNavButton" id="navbarSupportedContent">
+      <ul class="container-fluid gap-5 navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
         {{-- dropdown per utenti loggati --}}
         @auth
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown myNavButton">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            {{ auth()->user()->name }}
+          {{ auth()->user()->name }}
           </a>
-
-          <ul class="dropdown-menu">   
+          <ul class="dropdown-menu">
             <li>
               <a class="nav-link" href="/account">Pagina personale</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('articles.index') }}">Elenco Articoli</a>
             </li>
-            <li><hr class="dropdown-divider"></li>              
+            <li><hr class="dropdown-divider"></li>
             <li>
               <form action="/logout" method="POST">
                 @csrf
@@ -34,7 +33,7 @@
         </li>
         {{-- dropdown per utenti non loggati --}}
         @else
-          <li class="nav-item dropdown ">
+          <li class="nav-item dropdown myNavButton">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
@@ -44,7 +43,7 @@
             </ul>
           </li>
         @endauth
-
-      </div>
+        </ul>
     </div>
-  </nav>
+  </div>
+</nav>

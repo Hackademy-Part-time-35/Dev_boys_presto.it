@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     public function homepage(){
-       $articles = Article::all();
+       $articles = Article::take(6)->orderBy('created_at','desc')->get();
        return view('homepage', compact('articles'));
         
     }
@@ -15,4 +15,9 @@ class PublicController extends Controller
     public function account(){
         return view ('auth.account');
     }
+
+    public function categoryArticles (){
+        return view ('category.category');
+    }
 }
+

@@ -50,9 +50,9 @@ class ArticleController extends Controller implements HasMiddleware
     /**
      * Display the specified resource.
      */
-    public function show(StoreArticlesRequest $article)
+    public function show(Article $article)
     {
-        //
+        return view('articles.show', compact('article'));
     }
 
     /**

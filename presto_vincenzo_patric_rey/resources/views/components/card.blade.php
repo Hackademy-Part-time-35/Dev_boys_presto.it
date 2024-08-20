@@ -1,7 +1,7 @@
 @props(['article'])
 
 <div class="card mx-auto card-w shadow text-center mb-3" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="Immagine dell'articolo 'titolo'">
+    <img src="..." class="card-img-top" alt="{{$article->title}}">
     <div class="card-body">
       <h5 class="card-title">{{$article->title}}</h5>
       <h6 class="card-subtitle text-body-secondary">{{$article->price}} </h6>

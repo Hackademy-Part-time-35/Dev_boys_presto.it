@@ -1,12 +1,12 @@
 <x-layout>
 
-    <div class="container-fluid pt-5">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-3">
-                <div class="rounded shadow bg-body-secondary">
-                    <h1 class="fontBenvenuto">
+            <div class="col-12 text-center">
+                <div class="border">
+                    <h1 class="fontBenvenuto fs-1 text-uppercase">
                         Revisor dashboard
-                    </h1>
+                    </h1>         
                 </div>
             </div>
         </div>
@@ -19,17 +19,17 @@
         @endif
 
         @if ($article_to_check)
-        <div class="row justify-content-center-pt-5">
+        <div class="row justify-content-center pt-5">
             <div class="col-md-8">
                 <div class="row justify-content-center">
                     @for ($i = 0; $i < 6; $i++)
                         <div class="col-6 col-md-4 mb-4 text-center">
-                            <img src="" alt="" class="img-fluid rounded shadow">
+                            <img src="https://picsum.photos/id/238/500/300" alt="" class="img-fluid rounded shadow">
                         </div>
                     @endfor
                 </div>
             </div>
-            <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
+            <div class="col-md-4 ps-4 d-flex flex-column justify-content-evenly text-center">
                 <div>
                     <h1>{{ $article_to_check->title }}</h1>
                     <h3>Autore: {{ $article_to_check->user->name }}</h3>

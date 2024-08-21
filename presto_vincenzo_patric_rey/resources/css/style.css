@@ -191,3 +191,9 @@ a{text-decoration: none;}
     --bs-pagination-active-bg: var(--myTextSecondary);
     --bs-pagination-active-border-color: transparent;
 }
+
+/* Pagina categoria */
+
+.coloreTesto1 {
+    color: var(--myTextSecondary);
+}

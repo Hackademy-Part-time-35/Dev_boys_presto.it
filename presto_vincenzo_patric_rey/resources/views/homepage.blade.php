@@ -44,7 +44,7 @@
                 @endauth
             </div>
             
-            <div class="col-12 col-md-8 mt-5 d-flex row max-auto" >
+            <div class="col-12 col-md-8 d-flex row max-auto" >
                 @forelse ($articles as $article)
                     
                     <x-card :article="$article" />

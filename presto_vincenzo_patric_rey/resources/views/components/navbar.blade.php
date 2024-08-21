@@ -57,6 +57,14 @@
           </li>
         @endauth
         </ul>
+        <form action="{{ route('article.search') }}" role="search" method="GET" class="d-flex ms-auto">
+          <div class="input-group">
+            <input type="search" name="query" placeholder="Search" aria-label="search" class="form-control">
+            <button class="input-group-text btn bottone" id="basic-addon2">
+              Search
+            </button>
+          </div>
+        </form>
     </div>
   </div>
 </nav>

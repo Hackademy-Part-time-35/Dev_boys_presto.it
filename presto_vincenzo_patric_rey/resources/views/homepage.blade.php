@@ -25,7 +25,7 @@
         </div>
         @endif
             
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4">
                 @auth
@@ -44,7 +44,7 @@
                 @endauth
             </div>
             
-            <div class="col-12 col-md-8 d-flex row max-auto" >
+            <div class="col-12 col-md-8 d-flex row max-auto mt-5" >
                 @forelse ($articles as $article)
                     
                     <x-card :article="$article" />

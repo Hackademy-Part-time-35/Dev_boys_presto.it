@@ -6,11 +6,11 @@
 
 
  <div class="container">
-  <div class="row height-custom justify-content-center align-items-center text-cente h-75 d-inline-block">
-    <div class="col-12">
-       <h1 class=" display-4">Dettaglio dell'articolo: {{$article->title}}</h1>
+  <div class="row height-custom justify-content-center align-items-center text-center h-75">
+    <div class="col-12 mt-5 mb-4">
+       <h1 class="fontBenvenuto text-uppercase">{{$article->title}}</h1>
     </div>
-    <div class="row height-custom justify-content-center py-5 bg-dark text-white rounded-4 mt-5 ">
+    <div class="row height-custom justify-content-center align-items-center py-5 bg-dark text-white rounded-4">
       <div class="col-12 col-md-6 mb-3">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
@@ -20,13 +20,13 @@
           </div>
           <div class="carousel-inner shadow-lg rounded-4">
             <div class="carousel-item active">
-              <img src="https://picsum.photos/id/237/200/300" class="d-block w-100" alt="...">
+              <img src="https://picsum.photos/id/238/500/300" class="img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="https://picsum.photos/id/237/500/300" class="img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="https://picsum.photos/id/239/500/300" class="img-fluid" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -40,13 +40,23 @@
         </div>
       </div>
       <div class="col-12 col-md-6 mb-3 height-custom text-center">
-        <h2 class=" display-5"><span class="fw-bold">Titolo:</span> {{$article->title}}</h2>
-        <div class="d-flex flex-column justify-content-center h-75">
-            <h3>categoria: {{$article->category->name}}</h3>
-            <h4 class="fw-bold">Prezzo: {{$article->price}} $</h4>
-            <h5>Descrizione:</h5>
-            <p>{{$article->description}}</p>
+        <div class="mb-4">
+          <h3 class="font2 fs-5 fw-normal text-uppercase">Titolo: </h2>
+          <p class="fs-3 text-uppercase">{{$article->title}}</p>
         </div>
+        <div class="mb-4">
+            <h3 class="font2 fs-5 fw-normal text-uppercase">Categoria: </h3>
+            <p class="fs-3 text-uppercase">{{$article->category->name}}</p>
+        </div>
+        <div>
+            <h3 class="font2 fs-5 fw-normal text-uppercase">Prezzo: </h3>
+            <p class="fs-3 text-uppercase">{{$article->price}} $</p>
+        </div>
+        <div>
+          <h3 class="font2 fs-5 fw-normal text-uppercase">Descrizione: </h3>
+          <p class="fs-6">{{$article->description}}</p>
+        </div>  
+        
     </div>
     </div>
   </div>

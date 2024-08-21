@@ -14,10 +14,10 @@
     @endauth
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
                 @auth
-                <h3 class="mb-4">Ciao {{ auth()->user()->name }}, inserisci il tuo annuncio:</h3>
+                <h3 class="mb-4 text-uppercase">Ciao {{ auth()->user()->name }}, qui potrai creare il tuo annuncio:</h3>
                 <button type="button" class="btn bottone"><a href="/articles/create">Crea annuncio</a></button>
                 @else
                 <h3 class="mb-4">VUOI AGGIUNGERE UN ANNUNCIO?</h3>
@@ -32,7 +32,7 @@
                 @endauth
             </div>
             
-            <div class="col-8 mt-5 d-flex row max-auto" >
+            <div class="col-12 col-md-8 mt-5 d-flex row max-auto" >
                 @forelse ($articles as $article)
                     
                     <x-card :article="$article" />

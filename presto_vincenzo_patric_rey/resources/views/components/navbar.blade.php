@@ -59,7 +59,7 @@
         </ul>
         <form action="{{ route('article.search') }}" role="search" method="GET" class="d-flex ms-auto">
           <div class="input-group">
-            <button class="input-group-text btn bottone2" id="basic-addon2">
+            <button class="input-group-text btn bottone2 border border-0" id="basic-addon2">
             <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <input type="search" name="query" aria-label="search" class="form-control rounded-0 bordo">

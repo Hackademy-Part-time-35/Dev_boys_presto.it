@@ -9,6 +9,7 @@
     --myTextPrimary: #1e191b;
     --myTextSecondary: #ea573a;
     --myTextTerziary: #f9b2a4;
+    --myTextFour: #cff4ff;
 
 }
 
@@ -87,6 +88,13 @@ button > a{
 
 /*home*/
 
+:hover.carte {
+    z-index: 2;
+    background-color: transparent;
+    opacity: 1;
+    transition: background-color 0.25s ease-in-out;
+    
+}
 
 .bottone {
     background-color: var(--myTextSecondary);

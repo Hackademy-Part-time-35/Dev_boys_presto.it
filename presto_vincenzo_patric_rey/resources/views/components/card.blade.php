@@ -1,7 +1,7 @@
 @props(['article'])
 
-<div class="card rounded-0 mx-auto card-w shadow text-center mb-4 p-3" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="{{$article->title}}">
+<div class="card carte rounded-0 mx-auto card-w text-center mb-4 p-3" style="width: 18rem;">
+    <img src="https://picsum.photos/500/300" class="p-2" alt="{{$article->title}}">
     <div class="card-body">
       <h5 class="card-title mb-3">{{$article->title}}</h5>
       <h6 class="card-subtitle text-body-secondary mb-3">{{$article->price}} $</h6>

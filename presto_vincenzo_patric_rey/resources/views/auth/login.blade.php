@@ -2,11 +2,11 @@
 
  
 
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-lg-6 mx-auto">
 
-            <h1 class="fontBenvenuto text-center">LOGIN</h1>
+            <h1 class="fontTitolo text-center border">LOGIN</h1>
 
             <form action="/login" method="POST" class="mt-5">
                 @csrf

@@ -4,29 +4,28 @@
     @auth
     <div class="text-center">
         <h1 class="fontBenvenuto mt-5 mb-0">BENVENUTO, </h1>
-        <p class="font1 mb-5">{{ auth()->user()->name }}</p>
+        <p class="font1">{{ auth()->user()->name }}</p>
     </div>
     @else
     <div class="text-center">
         <h1 class="fontBenvenuto mt-5 mb-0">BENVENUTO</h1>
-        <p class="fontBenvenuto fs-1 mb-5">in </span><span class="font1 border">PRESTO.it<p/>
+        <p class="fontBenvenuto fs-1">in </span><span class="font1 border">PRESTO.it<p/>
     </div>
     @endauth 
    
-        @if (session()->has('errorMessage'))
-        <div class="aletr alert-danger text-center shadow rounded w-50">
-            {{session('errorMessage')}}
-        </div>
-        @endif
-
+        
+    <div class="row justify-content-center">
         @if (session()->has('message'))
-        <div class="aletr alert-danger text-center shadow rounded w-50">
-            {{session('message')}}
-        </div>
-        @endif
+            <div class="alert alert-success text-center w-50">
+                {{session('message')}}
+            </div>
+        @endif  
+    </div>
+       
             
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
+            
             <div class="col-12 col-md-4">
                 @auth
                 <h3 class="mb-4 text-uppercase">Ciao {{ auth()->user()->name }}, qui potrai creare il tuo annuncio:</h3>
@@ -44,7 +43,7 @@
                 @endauth
             </div>
             
-            <div class="col-12 col-md-8 d-flex row max-auto mt-5" >
+            <div class="col-12 col-md-8 d-flex row max-auto" >
                 @forelse ($articles as $article)
                     
                     <x-card :article="$article" />

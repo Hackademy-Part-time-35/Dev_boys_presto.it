@@ -8,7 +8,7 @@
  <div class="container">
   <div class="row height-custom justify-content-center align-items-center text-center h-75">
     <div class="col-12 mt-5 mb-4">
-       <h1 class="fontBenvenuto text-uppercase">{{$article->title}}</h1>
+       <h1 class="fontTitolo text-uppercase">{{$article->title}}</h1>
     </div>
     <div class="row height-custom justify-content-center align-items-center py-5 bg-dark text-white rounded-4">
       <div class="col-12 col-md-6 mb-3">
@@ -39,7 +39,7 @@
           </button>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-3 height-custom text-center">
+      <div class="col-12 col-md-6 height-custom text-center">
         <div class="mb-4">
           <h3 class="font2 fs-5 fw-normal text-uppercase">Titolo: </h2>
           <p class="fs-3 text-uppercase">{{$article->title}}</p>
@@ -48,15 +48,18 @@
             <h3 class="font2 fs-5 fw-normal text-uppercase">Categoria: </h3>
             <p class="fs-3 text-uppercase">{{$article->category->name}}</p>
         </div>
-        <div>
+        <div class="mb-4">
             <h3 class="font2 fs-5 fw-normal text-uppercase">Prezzo: </h3>
             <p class="fs-3 text-uppercase">{{$article->price}} $</p>
         </div>
-        <div>
+        <div class="mb-4">
           <h3 class="font2 fs-5 fw-normal text-uppercase">Descrizione: </h3>
           <p class="fs-6">{{$article->description}}</p>
-        </div>  
-        
+        </div>
+        <div class="fst-italic">
+          <h3 class="font2 fs-5 fw-normal text-uppercase">Autore: </h3>
+          <p class="fs-6 fw-light">{{$article->user->name}}</p>
+        </div>   
     </div>
     </div>
   </div>

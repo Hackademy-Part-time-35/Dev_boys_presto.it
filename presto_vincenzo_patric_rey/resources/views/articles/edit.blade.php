@@ -27,7 +27,7 @@
 
                     
                     <div class="col-12">
-                        <label for="category">Ctegoria</label>
+                        <label for="category">Categoria</label>
                         <input type="text" name="category" id="category" class="form-control" value="{{ old('category',$article->category) }}" @error('category') is-invalid @enderror>
                         @error('category') <span class="text-danger small">{{ $message }}</span> @enderror
                     </div> 

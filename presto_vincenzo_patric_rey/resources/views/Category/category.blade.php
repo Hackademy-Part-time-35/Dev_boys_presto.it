@@ -25,7 +25,7 @@
 <x-layout>
 
     <div class="container">
-        <h1 class="fontBenvenuto text-uppercase text-center my-5">Prodotti per categoria</h1>
+        <h1 class="fontTitolo text-uppercase text-center my-5">Prodotti per categoria</h1>
 
         <form  method="GET" action="{{ route('category.category')}}" >
             <div class="row justify-content-center">

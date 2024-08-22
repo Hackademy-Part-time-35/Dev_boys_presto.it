@@ -3,7 +3,7 @@
     <div class="container pt-4">
         <div class="justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="fontBenvenuto mt-4 text-uppercase">
+                <h1 class="fontTitolo mt-4 text-uppercase border">
                     Pubblica un articolo
                 </h1>
             </div>

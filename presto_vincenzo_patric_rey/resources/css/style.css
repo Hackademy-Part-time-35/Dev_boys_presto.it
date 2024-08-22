@@ -49,6 +49,16 @@
     color: var(--myTextSecondary);
 }
 
+.fontTitolo {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    color: var(--myTextSecondary);
+}
+
 .fontBenvenuto2 {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
@@ -79,6 +89,26 @@ button > a{
 .bottone2 {
     background-color: var(--myTextPrimary);
     border-radius: 0;
+}
+
+:hover.bottone2 {
+    
+    border-color: transparent;
+}
+
+.bottone3 {
+    background-color: var(--myTextSecondary);
+    border-radius: 0;
+    color:white;
+}
+
+:hover.bottone3 {
+    background-color: var(--myBackgroundPrimary);
+    color: black;
+}
+
+.coloreIcone {
+    color: var(--myTextSecondary);
 }
 
 .btn {
@@ -141,6 +171,7 @@ a{text-decoration: none;}
 
 :active.navLinks {
     background-color: var(--myTextSecondary);
+    color: white;
 }
 
 .myNavButton {
@@ -158,6 +189,11 @@ a{text-decoration: none;}
 }
 .btn-outline-light {
     --bs-btn-hover-bg: rgba(0, 0, 0, 0);
+}
+
+.bordo {
+    border-right: solid;
+    border-color: var(--myTextSecondary);
 }
 
 /* Header*/

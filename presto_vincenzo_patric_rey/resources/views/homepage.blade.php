@@ -3,12 +3,12 @@
     
     @auth
     <div class="text-center">
-        <h1 class="fontBenvenuto mt-5 mb-0">BENVENUTO, </h1>
+        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">BENVENUTO, </h1>
         <p class="font1">{{ auth()->user()->name }}</p>
     </div>
     @else
     <div class="text-center">
-        <h1 class="fontBenvenuto mt-5 mb-0">BENVENUTO</h1>
+        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">BENVENUTO</h1>
         <p class="fontBenvenuto fs-1">in </span><span class="font1 border">PRESTO.it<p/>
     </div>
     @endauth 
@@ -26,7 +26,7 @@
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             
-            <div class="col-12 col-md-4">
+            <div class="col-12 scritta1 col-md-4 mb-5">
                 @auth
                 <h3 class="mb-4 text-uppercase">Ciao {{ auth()->user()->name }}, qui potrai creare il tuo annuncio:</h3>
                 <button type="button" class="btn bottone"><a href="/articles/create">Crea annuncio</a></button>

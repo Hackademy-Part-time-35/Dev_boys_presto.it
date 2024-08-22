@@ -27,7 +27,7 @@
 
         </div>
 
-    <div class=" mt-5 col-12 p-5">
+    <div class="mt-5 col-12 p-5">
         <x-footer /> 
     </div>    
 </body>

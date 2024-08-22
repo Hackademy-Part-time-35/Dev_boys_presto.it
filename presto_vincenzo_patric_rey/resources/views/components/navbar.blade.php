@@ -12,8 +12,7 @@
         {{-- dropdown per utenti loggati --}}
         @auth
         <li class="nav-item dropdown myNavButton">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          {{ auth()->user()->name }}
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ strtoupper(auth()->user()->name) }}
           </a>
           <ul class="dropdown-menu">
             <li>

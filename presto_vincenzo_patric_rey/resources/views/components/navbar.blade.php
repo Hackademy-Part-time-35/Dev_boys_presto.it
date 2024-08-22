@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg border-bottom sfondo fixed-top py-3">
-  <div class="container-fluid w-75">
-    <a class="navbar-brand font1" href="/">PRESTO.<span class="fontIt">it</span></a>
+  <div class="container-fluid myNavbar">
+    <a class="navbar-brand font1" href="/">PRESTO.<span class="fontIt">it</span><div id="rettangolo" class="ms-2 d-inline-block"></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

@@ -87,6 +87,7 @@ button > a{
 
 /*home*/
 
+
 .bottone {
     background-color: var(--myTextSecondary);
     border-radius: 0;
@@ -166,7 +167,20 @@ a{text-decoration: none;}
     .scritta2 {
         font-size: 3rem;
     }
+
   }
+
+@media screen and (min-width: 992px){
+  #rettangolo {
+    visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 405px){
+    #rettangolo {
+      display: none;
+  }
+}
 
 /* Navbar */
 
@@ -207,6 +221,17 @@ a{text-decoration: none;}
     border-right: solid;
     border-color: var(--myTextSecondary);
 }
+
+#rettangolo {
+    width: 30px;
+    height: 15px;
+    background-color: var(--myTextSecondary);
+  }
+
+  .myNavbar {
+
+    width: 85%;
+  }
 
 /* Header*/
 

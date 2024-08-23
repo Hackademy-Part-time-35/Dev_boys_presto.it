@@ -24,7 +24,7 @@
                 <div class="row justify-content-center">
                     @for ($i = 0; $i < 6; $i++)
                         <div class="col-6 col-md-4 mb-4 text-center">
-                            <img src="https://picsum.photos/id/238/500/300" alt="" class="img-fluid rounded shadow">
+                            <img src="https://picsum.photos/500/300" alt="" class="img-fluid rounded shadow">
                         </div>
                     @endfor
                 </div>

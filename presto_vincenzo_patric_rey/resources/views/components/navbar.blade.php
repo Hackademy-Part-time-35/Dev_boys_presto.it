@@ -16,7 +16,7 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="nav-link navLinks" href="/account">Pagina personale</a>
+              <a class="nav-link navLinks" href="/account">My Space</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navLinks" href="{{ route('articles.index') }}">Elenco Articoli</a>

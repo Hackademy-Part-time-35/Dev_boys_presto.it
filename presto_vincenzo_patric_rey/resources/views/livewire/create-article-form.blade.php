@@ -46,18 +46,20 @@
 
     @if (session()->has('success'))
         <!-- Modal di conferma -->
-        <div class="modal fade show" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-modal="true" role="dialog" style="display: block;">
-            <div class="modal-dialog">
+        <div class="modal modal-backdrop fade show" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-modal="true" role="dialog" style="display: block;">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="confirmationModalLabel">Annuncio creato con successo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" wire:click="resetSuccess"></button>
+                    <div class="modal-header myNavButton text-center">
+                        <h5 class="modal-title font2 fs-5 text-white" id="confirmationModalLabel">Annuncio creato con successo</h5>
+                        
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body font2 fs-6 text-black">
                         Il tuo annuncio è stato creato correttamente!
+                        
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" wire:click="resetSuccess">OK</button>
+                    <button type="button" class="btn bottone2" data-bs-dismiss="modal" wire:click="resetSuccess">Continua a creare articoli</button>
+                    <button type="button" class="btn bottone2" data-bs-dismiss="modal" wire:click="redirectToMySpace">Ritorna su My Space</button> 
                     </div>
                 </div>
             </div>

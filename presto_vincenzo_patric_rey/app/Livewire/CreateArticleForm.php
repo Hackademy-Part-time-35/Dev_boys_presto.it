@@ -38,6 +38,10 @@ class CreateArticleForm extends Component
         session()->forget('success');
     }
 
+    public function redirectToMySpace() {
+        return redirect()->route('auth.account');
+    }
+
     public function render()
     {
         return view('livewire.create-article-form');

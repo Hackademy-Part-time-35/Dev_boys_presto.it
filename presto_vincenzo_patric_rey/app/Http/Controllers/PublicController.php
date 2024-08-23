@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PublicController extends Controller
 {
@@ -13,8 +14,14 @@ class PublicController extends Controller
         
     }
 
-    public function account(){
-        return view ('auth.account');
+    public function account(Article $article){
+        
+        $articles = auth()->user()->articles;
+        if($article->user_id == auth()->user()->id){
+            abort(403);
+        } else {
+            return view ('auth.account', ['articles' => $articles]);
+        }
     }
 
     public function categoryArticles (Request $request){

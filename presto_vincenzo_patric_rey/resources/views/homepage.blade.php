@@ -3,12 +3,12 @@
     
     @auth
     <div class="text-center">
-        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">BENVENUTO, </h1>
+        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">WELCOME, </h1>
         <p class="font1">{{ auth()->user()->name }}</p>
     </div>
     @else
     <div class="text-center">
-        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">BENVENUTO</h1>
+        <h1 class="fontBenvenuto scritta2 mt-5 mb-0">WELCOME</h1>
         <p class="fontBenvenuto fs-1">in </span><span class="font1 border">PRESTO.it<p/>
     </div>
     @endauth 

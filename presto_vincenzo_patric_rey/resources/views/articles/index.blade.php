@@ -8,7 +8,7 @@
         </div>
         <div class="row height-custom justify-content-center align-items-center pt-5">
             @forelse($articles as $article)
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                     
                     <x-card :article="$article"                          
                          />
@@ -22,7 +22,7 @@
             @endforelse
         </div>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-4">
         <div>
             {{$articles->links()}}
         </div>

@@ -17,11 +17,11 @@ class PublicController extends Controller
     public function account(Article $article){
         
         $articles = auth()->user()->articles;
-        if($article->user_id == auth()->user()->id){
-            abort(403);
-        } else {
+        if($article->user_id !== auth()->user()->id){
             return view ('auth.account', ['articles' => $articles]);
         }
+
+        
     }
 
     public function categoryArticles (Request $request){

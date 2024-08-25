@@ -1,5 +1,5 @@
 
-<div class="card m-1 rounded-0 ">
+<div class="card rounded-0 ">
     <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">Contattaci</h5>
     <div class="container">
         <div class="row align-items-center">

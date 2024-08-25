@@ -18,7 +18,7 @@
             </div>
         @endif
 
-        @if ($article_to_check)
+        @if ($article_to_check && $article_to_check->user_id !== auth()->id())
         <div class="row justify-content-center pt-5">
             <div class="col-md-8">
                 <div class="row justify-content-center">

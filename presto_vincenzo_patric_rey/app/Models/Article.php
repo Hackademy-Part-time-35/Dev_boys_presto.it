@@ -31,7 +31,9 @@ class Article extends Model
 
     public static function toBeRevisedCount()
     {
-        return Article::where('is_accepted', null)->count();
+        return Article::where('is_accepted', null)
+                        ->where('user_id', '!=', auth()->id())
+                        ->count();
     }
 
     public function toSearchableArray(){

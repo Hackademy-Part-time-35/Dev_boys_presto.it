@@ -16,12 +16,11 @@ class PublicController extends Controller
 
     public function account(Article $article){
         
-        $articles = auth()->user()->articles;
+        $articles = auth()->user()->articles()->where('is_accepted', true)->get();
         if($article->user_id !== auth()->user()->id){
             return view ('auth.account', ['articles' => $articles]);
         }
-
-        
+ 
     }
 
     public function categoryArticles (Request $request){

@@ -9,6 +9,11 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">HOME</a>
           </li>
+          <i class="bi bi-file-font-fill">
+            <span><x-locale lang="it" /></span>
+            <span><x-locale lang="en" /></span>
+            <span><x-locale lang="es" /></span>
+          </i>
         {{-- dropdown per utenti loggati --}}
         @auth
         <li class="nav-item dropdown myNavButton">

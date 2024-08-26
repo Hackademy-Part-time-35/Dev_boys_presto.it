@@ -1,5 +1,6 @@
 {
     "require": {
-        "laravel/scout": "^10.11"
+        "laravel/scout": "^10.11",
+        "outhebox/blade-flags": "^1.5"
     }
 }

@@ -1,6 +1,6 @@
 
 <div class="card rounded-0">
-    <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">Contatti</h5>
+    <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">{{ __('ui.contacts')}}</h5>
     <div class="container">
         <div class="row align-items-center">
         <div class="card-body col-md-5">
@@ -16,10 +16,10 @@
         
     </div>
     <div class="col-md-7 mb-3 text-center">
-            <h5>Vuoi diventare revisore?</h5>
-            <p>Cliccando il bottone sottostante farai richiesta al nostro admin</p>
+            <h5>{{__('ui.revisor1')}}</h5>
+            <p>{{__('ui.revisor2')}}</p>
     
-            <a href="{{route('become.revisor')}}" class="btn bottone">Diventa revisore</a>
+            <a href="{{route('become.revisor')}}" class="btn bottone">{{__('ui.revisor3')}}</a>
         </div>
         </div>
     </div>

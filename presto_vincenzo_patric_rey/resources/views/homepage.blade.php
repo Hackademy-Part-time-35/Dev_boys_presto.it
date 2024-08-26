@@ -28,17 +28,17 @@
             
             <div class="col-12 scritta1 col-md-4 mb-5">
                 @auth
-                <h3 class="mb-4 text-uppercase">Ciao {{ auth()->user()->name }}, qui potrai creare il tuo annuncio:</h3>
-                <button type="button" class="btn bottone"><a href="/articles/create">Crea annuncio</a></button>
+                <h3 class="mb-4 text-uppercase">{{ __('ui.hello')}} {{ auth()->user()->name }}, {{__('ui.loggato')}}</h3>
+                <button type="button" class="btn bottone"><a href="/articles/create">{{ __('ui.buttonCreate')}}</a></button>
                 @else
-                <h3 class="mb-4">VUOI AGGIUNGERE UN ANNUNCIO?</h3>
-                <p>Prima fai il login:</p>
+                <h3 class="mb-4 text-uppercase">{{ __('ui.nonLoggato') }}</h3>
+                <p>{{ __('ui.login') }}</p>
                 <button type="button" class="btn bottone mb-3">
-                    <a href="\login" >Login</a>
+                    <a href="\login" >{{__('ui.buttonLogin')}}</a>
                 </button>
-                <p>Non sei ancora registrato? Fallo subito!</p>
+                <p>{{ __('ui.register') }}</p>
                 <button type="button" class="btn bottone">
-                    <a href="\register" >Registrati</a>
+                    <a href="\register" >{{ __('ui.buttonRegister') }}</a>
                 </button>
                 @endauth
             </div>
@@ -50,7 +50,7 @@
                 @empty
                     <div class="col-12">
                         <h3 class="text-center">
-                            Non sono ancora stati creati articoli
+                            {{ __('ui.noArticles')}}
                         </h3>
                     </div>
                 @endforelse

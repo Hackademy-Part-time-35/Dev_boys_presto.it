@@ -7,8 +7,8 @@
       <h6 class="card-subtitle text-body-secondary mb-3">{{$article->price}} $</h6>
       
       <div class="d-flex justify-content-evenly align-item-center mt-4 mb-2">
-        <a href="{{route('article.show', $article)}}" class="btn bottone2">Dettaglio</a>
-        <a href="{{route('category.category')}}" class="btn bottone2">Categoria</a>
+        <a href="{{route('article.show', $article)}}" class="btn bottone2">{{ __('ui.details')}}</a>
+        <a href="{{route('category.category')}}" class="btn bottone2">{{ __('ui.category')}}</a>
       </div>
       
     </div>

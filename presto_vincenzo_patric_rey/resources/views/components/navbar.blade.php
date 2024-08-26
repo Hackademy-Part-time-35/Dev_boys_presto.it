@@ -23,16 +23,16 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="nav-link navLinks" href="/account">My Space</a>
+              <a class="nav-link navLinks" href="/account">{{ __('ui.mySpace')}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navLinks" href="{{ route('articles.index') }}">Elenco Articoli</a>
+              <a class="nav-link navLinks" href="{{ route('articles.index') }}">{{ __('ui.listArticles')}}</a>
             </li>
             <li><hr class="dropdown-divider"></li>
             <li>
               <form action="/logout" method="POST">
                 @csrf
-                <button class="nav-link navLinks bordo" type="submit">Logout</button>
+                <button class="nav-link navLinks bordo" type="submit">{{ __('ui.logout')}}</button>
               </form>
             </li>
           </ul>
@@ -40,8 +40,8 @@
         {{-- Area revisore --}}
         @if (Auth::user()->is_revisor)
           <li class="nav-item">
-            <a class="nav-link text-start btn btn-sm position-relative w-sm-25" href="{{ route('revisor.index') }}">
-              ZONA REVISORE
+            <a class="nav-link text-start btn btn-sm position-relative w-sm-25 text-uppercase" href="{{ route('revisor.index') }}">
+            {{ __('ui.areaRevisor')}}
               <span 
                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-black" id="tastino">{{ \App\Models\Article::toBeRevisedCount() }}
               </span>
@@ -57,8 +57,8 @@
               ACCOUNT
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/register">Registrati</a></li>
+              <li><a class="dropdown-item" href="/login">{{__('ui.buttonLogin')}}</a></li>
+              <li><a class="dropdown-item" href="/register">{{__('ui.buttonRegister')}}</a></li>
             </ul>
           </li>
         @endauth

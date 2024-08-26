@@ -3,7 +3,7 @@ return [
     
     // Homepage
     'welcome' => 'Benvenut*',
-    'nonLoggato' => 'tutti gli articoli',
+    'nonLoggato' => 'Vuoi aggiungere un annuncio?',
     'login' => 'Prima fai il login:', 
     'buttonLogin' => 'Entra',
     'register' => 'Non sei ancora registrato? Fallo subito!',

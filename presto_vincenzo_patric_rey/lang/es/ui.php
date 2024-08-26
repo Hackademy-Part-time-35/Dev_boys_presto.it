@@ -1,9 +1,9 @@
 <?php 
 return [
     //homepage
-    'welcome' => 'Bienvenido',
+    'welcome' => 'Bienvenid*',
     'allArticles' => 'Todos los articulos',
-    'nonLogato' => 'QUIERES AÑADIR UN ANUNCIO?',
+    'nonLoggato' => 'QUIERES AÑADIR UN ANUNCIO?',
     'login' => 'Inicia sesión primero',
     'register' => '¿Aún no estás registrado? ¡Hazlo ahora!',
     'buttonRegister' => 'Registro',
@@ -15,7 +15,7 @@ return [
 
     //card 
      'details'=> 'Detalle',
-     'category' => 'categoría',
+     'category' => 'Categoría',
 
      // footer
      'contacts' => 'Contactos',

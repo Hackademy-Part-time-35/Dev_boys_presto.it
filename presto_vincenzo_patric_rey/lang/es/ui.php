@@ -20,7 +20,7 @@ return [
      // footer
      'contacts' => 'Contactos',
      'revisor1' => 'Quieres convertirte en revisor',
-     'revisor2' => 'Cliccando il bottone sottostante farai richiesta al nostro admin',
+     'revisor2' => 'Al hacer clic en el botón a continuación, realizará una solicitud a nuestro administrador.',
      'revisor3' => 'Convertirse en auditor',
      //navBar
      'mySpace' => 'Área personal',

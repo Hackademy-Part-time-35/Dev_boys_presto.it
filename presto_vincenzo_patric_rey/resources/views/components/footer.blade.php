@@ -1,10 +1,9 @@
 
-<div class="card rounded-0 ">
-    <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">Contattaci</h5>
+<div class="card rounded-0">
+    <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">Contatti</h5>
     <div class="container">
         <div class="row align-items-center">
         <div class="card-body col-md-5">
-        <h3>I NOSTRI CONTATTI:</h3>
         <ul class="mt-3 list-unstyled">
             <li><i class="fa-solid fa-mobile-screen-button me-3 mb-2 fs-4 coloreIcone"></i>Tel: 345 678 9030</li>
             <li><i class="fa-solid fa-phone me-3 mb-2 fs-5 coloreIcone"></i>Fisso: 089 345 5678</li>

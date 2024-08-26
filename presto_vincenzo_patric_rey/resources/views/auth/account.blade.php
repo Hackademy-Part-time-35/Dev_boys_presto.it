@@ -30,6 +30,11 @@
             @endforelse
         </div>
     </div>
+    <div class="d-flex justify-content-center mt-4">
+        <div>
+            {{$articles->links()}}
+        </div>
+    </div>
     
     
 </x-layout>

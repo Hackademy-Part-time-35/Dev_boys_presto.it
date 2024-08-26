@@ -33,7 +33,7 @@
 
         </div>
 
-    <div class="mt-5 col-12 p-lg-5">
+    <div class="mt-5 col-12">
         <x-footer /> 
     </div>    
 </body>

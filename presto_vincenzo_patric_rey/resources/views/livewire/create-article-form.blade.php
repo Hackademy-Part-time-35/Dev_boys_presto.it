@@ -54,7 +54,9 @@
                         
                     </div>
                     <div class="modal-body font2 fs-6 text-black">
-                        Il tuo annuncio è stato creato correttamente!
+                        <p>Il tuo annuncio è stato creato correttamente!</p>
+                        <p class="fw-lighter">Per renderlo pubblico, dovrai attendere che sia confermato da uno dei revisori</p>
+                        
                         
                     </div>
                     <div class="modal-footer">

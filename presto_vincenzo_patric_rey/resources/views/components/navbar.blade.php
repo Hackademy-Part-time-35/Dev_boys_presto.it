@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg border-bottom sfondo fixed-top py-3">
+<nav class="navbar navbar-expand-lg px-lg-0 px-xs-2 border-bottom sfondo fixed-top py-3">
   <div class="container-fluid myNavbar">
     <a class="navbar-brand font1" href="/">PRESTO.<span class="fontIt">it</span><div id="rettangolo" class="ms-2 d-inline-block"></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse myNavButton" id="navbarSupportedContent">
-      <ul class="container-fluid justify-content-end navbar-nav mb-2 mb-lg-0">
+      <ul class="container-fluid justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">HOME</a>
           </li>

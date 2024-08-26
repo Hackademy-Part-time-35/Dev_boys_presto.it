@@ -13,6 +13,24 @@
 
 }
 
+@media (hover: hover){
+    .carte{
+        transition: all 0.3s;
+    }
+
+    :hover.carte {
+    transform: scale(1.10);
+    background-color: var(--myTextSecondary);
+    }
+}
+
+.bordoFoto {
+    padding: 1rem;
+    background-color: var(--myTextSecondary);
+
+}
+
+
 .sfondo {
     background-color: var(--myBackgroundPrimary);
 }
@@ -87,14 +105,6 @@ button > a{
 
 
 /*home*/
-
-:hover.carte {
-    z-index: 2;
-    background-color: transparent;
-    opacity: 1;
-    transition: background-color 0.25s ease-in-out;
-    
-}
 
 .bottone {
     background-color: var(--myTextSecondary);
@@ -305,3 +315,4 @@ a{text-decoration: none;}
     --bs-backdrop-bg: #00000082;
     --bs-backdrop-opacity: 1;
 }
+

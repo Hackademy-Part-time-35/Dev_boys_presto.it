@@ -12,5 +12,5 @@
       </div>
       
     </div>
-    <author class="card-subtitle text-body-secondary fw-light fst-italic text-end">{{$article->user->name}}</author>
+    <p class="nascondi card-subtitle text-body-secondary fw-light fst-italic text-end">{{$article->user->name}}</p>
 </div>

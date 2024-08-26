@@ -22,7 +22,17 @@
     transform: scale(1.10);
     background-color: var(--myTextSecondary);
     }
+
+    .carte .nascondi {
+        visibility: hidden;
+    }
+
+    :hover.carte .nascondi {
+        visibility: visible;
+    }
 }
+
+
 
 .bordoFoto {
     padding: 1rem;

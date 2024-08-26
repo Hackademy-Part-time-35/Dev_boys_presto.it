@@ -25,7 +25,7 @@
             <li>
               <form action="/logout" method="POST">
                 @csrf
-                <button class="nav-link navLinks" type="submit">Logout</button>
+                <button class="nav-link navLinks bordo" type="submit">Logout</button>
               </form>
             </li>
           </ul>

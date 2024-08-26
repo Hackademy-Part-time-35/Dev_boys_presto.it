@@ -1,5 +1,5 @@
 <?php 
 return [
-    'hello' => 'Hello',
+    'welcome' => 'WELCOME',
     'allArticles' => 'All the articles'
 ];

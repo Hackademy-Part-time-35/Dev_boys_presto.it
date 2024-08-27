@@ -12,6 +12,7 @@ class CreateArticleForm extends Component
     use WithFileUploads;
     public $images = [];
     public $temporary_images;
+
     public function updatedTemporaryImages() 
     {
         if($this->validate([
@@ -60,8 +61,16 @@ class CreateArticleForm extends Component
             }
         }
 
+        session()->flash('success');
         $this->cleanForm();
-        session()->flash('success', 'Articolo creato correttamente');
+    }
+
+    protected function cleanForm(){
+        $this->title = '';
+        $this->description = '';
+        $this->category = '';
+        $this->price = '';
+        $this->images = [];
     }
 
     public function resetSuccess()

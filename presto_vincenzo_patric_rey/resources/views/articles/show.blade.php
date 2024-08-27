@@ -18,26 +18,28 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner shadow-lg rounded-4">
-            <div class="carousel-item active">
-              <img src="https://picsum.photos/id/238/500/300" class="img-fluid" alt="...">
+          @if ($article->images->count() > 0)
+            <div class="carousel-inner shadow-lg rounded-0">
+              @foreach ($article->images as $key => $image)
+                <div class="carousel-item @if ($loop->first) active @endif">
+                  <img src="{{ Storage::url($image->path) }}" class="d-block w-100 rounded shadow" alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">
+                </div>
+              @endforeach
             </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/id/237/500/300" class="img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/id/239/500/300" class="img-fluid" alt="...">
-            </div>
+              @if ($article->images->count() > 1)
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              @endif
+          @else
+            <img src="https://picsum.photos/500/300" alt="Nessuna foto inserita dall'utente" class="d-block w-100 rounded shadow">
+          @endif
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
       </div>
       <div class="col-12 col-md-6 height-custom text-center">
         <div class="mb-4">

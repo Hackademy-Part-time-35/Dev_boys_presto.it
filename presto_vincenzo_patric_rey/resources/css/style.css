@@ -326,6 +326,8 @@ a{text-decoration: none;}
     --bs-backdrop-opacity: 1;
 }
 
+/* Immagini */
+
 .img-preview {
     background-position: center;
     background-repeat:  no-repeat;

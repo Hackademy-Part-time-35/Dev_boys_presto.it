@@ -62,12 +62,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lingua
             </a>
-            <ul class="dropdown-menu">
+            {{-- <ul class="dropdown-menu">
               <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="it" /></i></li>
               <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="en" /></i></li>
               <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="es" /></i></li>
             </ul>
-          </li>
+          </li> --}}
             
             
           {{-- fine scelta lingua --}}

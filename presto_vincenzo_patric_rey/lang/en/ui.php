@@ -20,7 +20,7 @@ return [
     // Footer
     'contacts' => 'Contacts',
     'revisor1' => 'Would you like to become a revisor?',
-    'revisor2' => 'Clicking on the button below, you will send a request to our admin',
+    'revisor2' => 'Click on the button below, you will send a request to our admin',
     'revisor3' => 'Become revisor',
 
     //Navbar

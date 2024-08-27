@@ -5,17 +5,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse myNavButton" id="navbarSupportedContent">
+    
       <ul class="container-fluid justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">HOME</a>
           </li>
-          {{-- scelta lingua --}}
-          <li  class="nav-item dropdown dropdown-toggle">
-            <i class="bi bi-file-font-fill"><x-_locale lang="it" /></i>
-            <i class="bi bi-file-font-fill"><x-_locale lang="en" /></i>
-            <i class="bi bi-file-font-fill"><x-_locale lang="es" /></i>
-          </li>
-          {{-- fine scelta lingua --}}
+          
         {{-- dropdown per utenti loggati --}}
         @auth
         <li class="nav-item dropdown myNavButton">
@@ -39,7 +34,7 @@
         </li>
         {{-- Area revisore --}}
         @if (Auth::user()->is_revisor)
-          <li class="nav-item">
+          <li class="nav-item me-2">
             <a class="nav-link text-start btn btn-sm position-relative w-sm-25 text-uppercase" href="{{ route('revisor.index') }}">
             {{ __('ui.areaRevisor')}}
               <span 
@@ -62,7 +57,22 @@
             </ul>
           </li>
         @endauth
+
+        {{-- scelta lingua --}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lingua
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="it" /></i></li>
+              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="en" /></i></li>
+              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="es" /></i></li>
+            </ul>
+          </li>
+            
+            
+          {{-- fine scelta lingua --}}
         </ul>
+
         <form action="{{ route('article.search') }}" role="search" method="GET" class="d-flex ms-auto">
           <div class="input-group">
             <button class="input-group-text btn bottone2 border border-0" id="basic-addon2">
@@ -72,6 +82,8 @@
             
           </div>
         </form>
+
+        
     </div>
   </div>
 </nav>

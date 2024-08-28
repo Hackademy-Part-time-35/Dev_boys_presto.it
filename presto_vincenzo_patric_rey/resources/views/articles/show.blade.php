@@ -41,6 +41,7 @@
             <img src="https://picsum.photos/500/300" alt="Nessuna foto inserita dall'utente" class="d-block w-100 rounded shadow">
           @endif
           </div>
+  </div>  
       </div>
       <div class="col-12 col-md-6 height-custom text-center">
         <div class="mb-4">

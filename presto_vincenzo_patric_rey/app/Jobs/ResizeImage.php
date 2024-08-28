@@ -8,6 +8,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Spatie\Image\Enums\CropPosition;
 
 class ResizeImage implements ShouldQueue
 {
@@ -16,8 +17,8 @@ class ResizeImage implements ShouldQueue
    private $w, $h, $fileName, $path;
     public function __construct($filePath, $w, $h)
     {
-        $this->$path = dirname($filePath);
-        $this->$fileName = basename($filePath);
+        $this->path= dirname($filePath);
+        $this->fileName= basename($filePath);
         $this->w = $w;
         $this->h = $h;
 

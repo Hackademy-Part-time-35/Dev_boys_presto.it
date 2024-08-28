@@ -1,7 +1,7 @@
 @props(['article'])
 
 <div class="card carte rounded-0 mx-auto card-w text-center mb-4 p-3" style="width: 18rem;">
-    <a href="{{route('article.show', $article)}}"><img src="{{$article->images->isNotEmpty() ? Storage::url($article->images->first()->path): 'https://picsum.photos/500/300'}}"  class="img-fluid bordoFoto" alt="Immagine dell'articolo {{ $article->title }}"></a>
+    <a href="{{route('article.show', $article)}}"><img src="{{$article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300): 'https://picsum.photos/500/300'}}"  class="img-fluid bordoFoto" alt="Immagine dell'articolo {{ $article->title }}"></a>
     <div class="card-body">
       <h5 class="card-title mb-3">{{$article->title}}</h5>
       <h6 class="card-subtitle text-body-secondary mb-3">{{$article->price}} $</h6>

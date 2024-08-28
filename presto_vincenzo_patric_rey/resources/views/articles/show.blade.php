@@ -6,7 +6,7 @@
 
 
  <div class="container">
-  <div class="row height-custom justify-content-center align-items-center text-center h-75">
+  <div class="row height-custom justify-content-center align-items-center text-center h-75">  
     <div class="col-12 mt-5 mb-4">
        <h1 class="fontTitolo text-uppercase">{{$article->title}}</h1>
     </div>
@@ -23,11 +23,10 @@
           <div class="carousel-inner shadow-lg rounded-0">
             @foreach ($article->images as $key => $image)
               <div class="carousel-item @if ($loop->first) active @endif">
-                <img src="{{ $image->getUrl(300, 300) }}" class="d-block w-100 rounded shadow" alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">
+                <img src="{{ $image->getUrl(500, 300) }}" class="d-block w-100 rounded shadow" alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">
               </div>
             @endforeach
          </div>
-            </div>
               @if ($article->images->count() > 1)
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>

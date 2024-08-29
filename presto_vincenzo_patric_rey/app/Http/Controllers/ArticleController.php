@@ -24,7 +24,7 @@ class ArticleController extends Controller implements HasMiddleware
 
     public function index()
     {
-        $articles = Article::where('is_accepted', true)->orderBy('created_at','desc')->paginate(9);
+        $articles = Article::where('is_accepted', true)->orderBy('created_at','desc')->paginate(8);
         return view('articles.index', compact('articles'));
     }
 

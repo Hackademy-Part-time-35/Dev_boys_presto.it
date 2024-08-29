@@ -16,7 +16,7 @@ class PublicController extends Controller
 
     public function account(Article $article){
         
-        $articles = auth()->user()->articles()->orderBy('created_at','desc')->where('is_accepted', true)->paginate(9);
+        $articles = auth()->user()->articles()->orderBy('created_at','desc')->where('is_accepted', true)->paginate(8);
         if($article->user_id !== auth()->user()->id){
             return view ('auth.account', ['articles' => $articles]);
         }

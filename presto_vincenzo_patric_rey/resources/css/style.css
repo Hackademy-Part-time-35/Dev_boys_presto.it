@@ -194,6 +194,10 @@ a{text-decoration: none;}
         font-size: 3rem;
     }
 
+    .immagine {
+        display:none;
+    }
+
   }
 
 @media screen and (min-width: 992px){
@@ -336,7 +340,7 @@ a{text-decoration: none;}
 }
 
 .immagine {
-    height: 50vh;
+    height: 20vh;
     --s: 15vmin;
     --p: calc(var(--s) / 2);
     --c1: var(--myTextSecondary);
@@ -413,12 +417,6 @@ a{text-decoration: none;}
         calc(var(--p) * -5) calc(var(--p) * 17), 
         calc(var(--p) *  5) calc(var(--p) * 15), 
         calc(var(--p) * -5) calc(var(--p) * 16);
-    }
-  }
-  
-  @media (prefers-reduced-motion) {
-    body {
-      animation: none;
     }
   }
 

@@ -133,15 +133,18 @@
     <div class="mb-4">
         <label for="category" class="form-label text-uppercase font2 fs-5">Categoria</label>
         <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-5">
-            <option label disabled>Seleziona una categoria</option>
+            <option value="" selected >Seleziona una categoria</option>
+            
             @foreach($categories as $category)
-                <option value="{{$category->id}}">{{$category->name}}</option>
+                <option selected value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select>
         @error('category')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
     </div>
+
+    
 
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn bottone3">Crea</button>

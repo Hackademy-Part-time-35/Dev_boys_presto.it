@@ -59,18 +59,18 @@
         @endauth
 
         {{-- scelta lingua --}}
-        @php
+        {{-- @php
         // Recupera la lingua corrente dalla sessione o usa 'it' come lingua di default
         $currentLocale = session('locale', 'it');
-        @endphp
+        @endphp --}}
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="{{ asset('vendor/blade-flags/language-' . $currentLocale . '.svg') }}" alt="{{ $currentLocale }}" width="32" height="32">
+              <img src="{{ asset('vendor/blade-flags/language-' . session('locale', 'it') . '.svg') }}" alt="{{ session('locale', 'it') }}" width="32" height="32">
           </a>
           <ul class="dropdown-menu dropdown-menu-end p-0 border-0" style="min-width: auto;">
               @foreach(['it', 'en', 'es'] as $lang)
-                  @if($lang !== $currentLocale)
+                  @if($lang !== session('locale', 'it'))
                       <li class="dropdown-item p-0 text-start">
                           <x-_locale lang="{{ $lang }}" />
                       </li>

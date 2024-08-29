@@ -420,3 +420,25 @@ a{text-decoration: none;}
     }
   }
 
+/* Animazione typewriter */
+
+.contenitore {
+    display: inline-block;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    animation: typing 0.5s steps(8, end) forwards, blinking .8s infinite;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: var(--myTextPrimary)};
+  }

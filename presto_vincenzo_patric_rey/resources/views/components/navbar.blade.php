@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse myNavButton" id="navbarSupportedContent">
     
-      <ul class="container-fluid justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
+      <ul class="container-fluid align-items-center justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">HOME</a>
           </li>

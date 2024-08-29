@@ -1,7 +1,7 @@
 
 <div class="card rounded-0">
     <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">{{ __('ui.contacts')}}</h5>
-    <div class="container-fluid ps-3 my-2">
+    <div class="container-fluid ps-3 mt-2">
         <div class="row align-items-center fs-5">
             <div class="col-md-3">
                 <ul class="mt-3 list-unstyled">
@@ -12,7 +12,7 @@
                     <li><i class="fa-regular fa-building me-3 mb-2 fs-4 coloreIcone"></i>Sede: Livorno</li>
                 </ul>   
             </div>
-            <div class="col-md-3 text-center fs-3">
+            <div class="col-md-3 text-center my-4 fs-3">
                 <h5 class="fw-bold">Modalità di pagamento:</h5>
                 <i class="fa-regular fa-credit-card text-black"></i>
                 <i class="fa-brands fa-cc-visa text-black"></i>

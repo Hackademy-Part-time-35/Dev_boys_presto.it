@@ -3,20 +3,20 @@
     
     <div class="container-fluid mb-3">
         <div class="row align-items-center">
-            <div class="col-3 immagine mt-5">
+            <div class="col-md-3 immagine mt-5">
             </div>
                 @auth
-                <div class="text-center col-6 p-0">
+                <div class="text-center col-12 col-md-6 p-0">
                     <h1 class="fontBenvenuto scritta2 mt-5 mb-0 text-uppercase">{{ __('ui.welcome') }}, </h1>
                     <p class="font1">{{ auth()->user()->name }}</p>
                 </div>
                 @else
-                <div class="text-center col-6 p-0">
+                <div class="text-center col-12 col-md-6 p-0">
                     <h1 class="fontBenvenuto scritta2 mt-5 mb-0 text-uppercase">{{ __('ui.welcome') }}</h1>
                     <p class="fontBenvenuto fs-1">in </span><span class="font1 border">PRESTO.it</p>
                 </div>
                 @endauth 
-            <div class="col-3 immagine mt-5">
+            <div class="col-md-3 immagine mt-5">
             </div>
         </div>
     </div>

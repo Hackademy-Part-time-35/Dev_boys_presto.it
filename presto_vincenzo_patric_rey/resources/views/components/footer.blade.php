@@ -1,7 +1,7 @@
 
 <div class="card rounded-0">
     <h5 class="card-header rounded-0 myNavButton fontBenvenuto2 fs-1">{{ __('ui.contacts')}}</h5>
-    <div class="container-fluid ps-3 mt-2">
+    <div class="container-fluid ps-3 mt-2 mb-4">
         <div class="row align-items-center fs-5">
             <div class="col-md-3">
                 <ul class="mt-3 list-unstyled">

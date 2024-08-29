@@ -198,6 +198,16 @@ a{text-decoration: none;}
         display:none;
     }
 
+    .allinea  {
+        align-items: start;
+    }
+
+  }
+
+  @media screen and (min-width: 768px){
+    .allinea  {
+        align-items: center;
+    }
   }
 
 @media screen and (min-width: 992px){
@@ -209,7 +219,6 @@ a{text-decoration: none;}
 @media screen and (max-width: 992px){
   #tastino {
         transform: none !important;
-        left: 43% !important;
     }
 }
 

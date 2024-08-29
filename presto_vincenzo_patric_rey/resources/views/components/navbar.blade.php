@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse myNavButton" id="navbarSupportedContent">
     
-      <ul class="container-fluid align-items-center justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
+      <ul class="container-fluid allinea justify-content-end navbar-nav mb-2 mb-lg-0 ms-2">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">HOME</a>
           </li>
@@ -38,7 +38,7 @@
             <a class="nav-link text-start btn btn-sm position-relative w-sm-25 text-uppercase" href="{{ route('revisor.index') }}">
             {{ __('ui.areaRevisor')}}
               <span 
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-black" id="tastino">{{ \App\Models\Article::toBeRevisedCount() }}
+                class="position-absolute top-0 translate-middle badge rounded-pill bg-black" id="tastino">{{ \App\Models\Article::toBeRevisedCount() }}
               </span>
             </a>
           </li>

@@ -43,7 +43,7 @@
             </a>
           </li>
         @endif
-       {{-- Fine area revisore --}}
+        {{-- Fine area revisore --}}
 
         {{-- dropdown per utenti non loggati --}}
         @else
@@ -59,21 +59,29 @@
         @endauth
 
         {{-- scelta lingua --}}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lingua
-            </a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="it" /></i></li>
-              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="en" /></i></li>
-              <li class="dropdown-item"><i class="bi bi-file-font-fill"><x-_locale lang="es" /></i></li>
-            </ul>
-          </li>
-            
-            
-          {{-- fine scelta lingua --}}
-        </ul>
+        @php
+        // Recupera la lingua corrente dalla sessione o usa 'it' come lingua di default
+        $currentLocale = session('locale', 'it');
+        @endphp
 
-        <form action="{{ route('article.search') }}" role="search" method="GET" class="d-flex ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="{{ asset('vendor/blade-flags/language-' . $currentLocale . '.svg') }}" alt="{{ $currentLocale }}" width="32" height="32">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-0 border-0" style="min-width: auto;">
+              @foreach(['it', 'en', 'es'] as $lang)
+                  @if($lang !== $currentLocale)
+                      <li class="dropdown-item p-0 text-start">
+                          <x-_locale lang="{{ $lang }}" />
+                      </li>
+                  @endif
+              @endforeach
+          </ul>
+        </li>
+        {{-- fine scelta lingua --}}
+        
+        {{-- sbarra di ricerca --}}
+        <form action="{{ route('article.search') }}" role="search" method="GET" class="d-flex ms-1">
           <div class="input-group">
             <button class="input-group-text btn bottone2 border border-0" id="basic-addon2">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -82,8 +90,8 @@
             
           </div>
         </form>
-
-        
+        {{-- fine sbarra di ricerca --}}
+      </ul>
     </div>
   </div>
 </nav>

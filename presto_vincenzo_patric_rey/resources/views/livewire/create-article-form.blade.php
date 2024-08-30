@@ -76,7 +76,7 @@
 
     <div class="mb-4">
         <label for="title" class="form-label text-uppercase font2 fs-5">Titolo</label>
-        <input type="text" class="form-control font2 text-black fs-6 text-center" id="title" wire:model.blur="title">
+        <input placeholder="Inserisci almeno 5 caratteri" type="text" class="form-control font2 text-black fs-6 text-center" id="title" wire:model.blur="title">
         @error('title')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -84,7 +84,7 @@
 
     <div class="mb-4">
         <label for="description" class="form-label text-uppercase font2 fs-5">Descrizione</label>
-        <textarea id="description" cols="30" rows="10" class="form-control font2 text-black fs-6" wire:model.blur="description"></textarea>
+        <textarea placeholder="Inserisci almeno 10 caratteri" id="description" cols="30" rows="10" class="form-control font2 text-black fs-6" wire:model.blur="description"></textarea>
         @error('description')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -92,7 +92,7 @@
 
     <div class="mb-4">
         <label for="price" class="form-label text-uppercase font2 fs-5">Prezzo</label>
-        <input type="text" class="form-control font2 text-black fs-6 text-center" id="price" wire:model.blur="price">
+        <input placeholder="Inserisci qui il prezzo" type="text" class="form-control font2 text-black fs-6 text-center" id="price" wire:model.blur="price">
         @error('price')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror

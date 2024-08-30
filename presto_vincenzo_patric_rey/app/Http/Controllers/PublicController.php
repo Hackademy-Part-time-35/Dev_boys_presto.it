@@ -27,17 +27,21 @@ class PublicController extends Controller
         // inizio prova filtro
         $categories = Category::all();
 
+        $categoryId = $request->input('category_id');
+
         // filtro in base alla categoria
         $query = Article::query();
 
-        if ($request->filled('category_id')){
-            $query->where('category_id', $request->input('category_id'));
+        // if ($request->filled('category_id')){
+        //     $query->where('category_id', $request->input('category_id'));
+        // }
+        if ($categoryId) {
+            $query->where('category_id', $categoryId);
         }
-        
+
         $articles = $query->get();
 
-        return view('category.category', compact('articles', 'categories'));
-        // return view ('category.category');
+        return view('category.category', compact('articles', 'categories', 'categoryId'));
     }
 
     public function searchArticles(Request $request){

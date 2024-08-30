@@ -58,12 +58,6 @@
           </li>
         @endauth
 
-        {{-- scelta lingua --}}
-        {{-- @php
-        // Recupera la lingua corrente dalla sessione o usa 'it' come lingua di default
-        $currentLocale = session('locale', 'it');
-        @endphp --}}
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="{{ asset('vendor/blade-flags/language-' . session('locale', 'it') . '.svg') }}" alt="{{ session('locale', 'it') }}" width="32" height="32">

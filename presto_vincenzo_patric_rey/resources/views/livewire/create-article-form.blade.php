@@ -98,7 +98,7 @@
         @enderror
     </div>
 
-    {{-- inserimento immagine --}}
+    {{-- inserimento immagini --}}
     <div class="mb-4">
         <label for="file" class="form-label text-uppercase font2 fs-5">Immagine</label>
         <input type="file" wire:model.live="temporary_images" multiple
@@ -129,7 +129,8 @@
             </div>
         </div>
     @endif
-
+    {{-- fine sezione immagini --}}
+    
     <div class="mb-4">
         <label for="category" class="form-label text-uppercase font2 fs-5">Categoria</label>
         <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-5">

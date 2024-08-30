@@ -12,28 +12,10 @@ use Livewire\WithFileUploads;
 class CreateArticleForm extends Component
 {
     use WithFileUploads;
+    
     public $images = [];
+    #[Validate('required|array|max:6')]
     public $temporary_images;
-
-    public function updatedTemporaryImages() 
-    {
-        if($this->validate([
-            'temporary_images.*' => 'image|max:1024',
-            'temporary_images' => 'max:6'
-        ])) {
-        foreach ($this->temporary_images as $image) {
-            $this->images[] = $image;
-        }
-        }
-
-    }
-
-    public function removeImage($key)
-    {
-        if(in_array($key, array_keys($this->images))){
-            unset($this->images[$key]);
-        }
-    }
 
     #[Validate('required|min:5')]
     public $title;
@@ -60,8 +42,8 @@ class CreateArticleForm extends Component
         if(count($this->images) > 0){
             foreach ($this->images as $image){
                 $newFileName ="articles/{$this->article->id}";
-               $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
-               dispatch(new ResizeImage($newImage->path, 500, 300));
+                $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
+                dispatch(new ResizeImage($newImage->path, 500, 300));
             }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
@@ -76,6 +58,26 @@ class CreateArticleForm extends Component
         $this->category = '';
         $this->price = '';
         $this->images = [];
+    }
+
+    public function updatedTemporaryImages() 
+    {
+        if($this->validate([
+            'temporary_images.*' => 'image|max:1024',
+            'temporary_images' => 'max:6'
+        ])) {
+        foreach ($this->temporary_images as $image) {
+            $this->images[] = $image;
+        }
+        }
+
+    }
+
+    public function removeImage($key)
+    {
+        if(in_array($key, array_keys($this->images))){
+            unset($this->images[$key]);
+        }
     }
 
     public function resetSuccess()

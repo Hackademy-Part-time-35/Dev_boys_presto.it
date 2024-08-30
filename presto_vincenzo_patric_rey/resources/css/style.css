@@ -123,6 +123,8 @@ button > a{
 .bottone2 {
     background-color: var(--myTextPrimary);
     border-radius: 0;
+    margin: 1%;
+    white-space: nowrap;
 }
 
 .bottone3 {

@@ -10,7 +10,7 @@
     <div class="col-12 mt-5 mb-4">
        <h1 class="fontTitolo text-uppercase">{{$article->title}}</h1>
     </div>
-    <div class="row height-custom justify-content-center align-items-center py-5 bg-dark text-white rounded-4">
+    <div class="row height-custom justify-content-center align-items-center pt-5 pb-4 bg-dark text-white rounded-4">
       <div class="col-12 col-md-6 mb-3">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">

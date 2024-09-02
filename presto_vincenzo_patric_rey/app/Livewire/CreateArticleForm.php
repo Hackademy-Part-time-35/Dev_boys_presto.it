@@ -14,7 +14,7 @@ class CreateArticleForm extends Component
     use WithFileUploads;
     
     public $images = [];
-    #[Validate('required|array|max:6')]
+    #[Validate('max:6')]
     public $temporary_images;
 
     #[Validate('required|min:5')]
@@ -63,7 +63,7 @@ class CreateArticleForm extends Component
     public function updatedTemporaryImages() 
     {
         if($this->validate([
-            'temporary_images.*' => 'image|max:1024',
+            'temporary_images.*' => 'image|max:4000',
             'temporary_images' => 'max:6'
         ])) {
         foreach ($this->temporary_images as $image) {

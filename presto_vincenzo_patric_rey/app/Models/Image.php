@@ -40,4 +40,10 @@ class Image extends Model
     {
         return self::getUrlByFilePath($this->path, $w, $h);
     }
+
+    public function casts(): array {
+        return [
+            'labels' => 'array',
+        ];
+    }
 }

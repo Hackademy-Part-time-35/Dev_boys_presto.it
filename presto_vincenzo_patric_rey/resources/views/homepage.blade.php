@@ -1,7 +1,7 @@
 
 <x-layout>
     
-    <div class="container-fluid mb-3">
+    <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-3 immagine mt-5">
             </div>

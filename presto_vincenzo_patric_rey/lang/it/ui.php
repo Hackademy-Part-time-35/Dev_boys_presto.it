@@ -22,6 +22,13 @@ return [
     'revisor1' => 'Vuoi diventare revisore?',
     'revisor2' => 'Cliccando il bottone sottostante farai richiesta al nostro admin',
     'revisor3' => 'Diventa revisore',
+    'revisor4' => 'Sei un revisore',
+    'payment' => 'Metodi di pagamento',
+    'phone' => 'Cell',
+    'workplace' => 'Sede',
+    'landline' => 'Fisso',
+    'app1' => 'Scarica l\'app ufficiale di Presto.it',
+    'app2' => 'Cerca tra migliaia di annunci e inserisci i tuoi, ovunque tu sia.',
 
     // Navbar
     'mySpace' => 'La mia pagina',

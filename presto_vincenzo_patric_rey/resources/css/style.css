@@ -203,13 +203,18 @@ a{text-decoration: none;}
     .allinea  {
         align-items: start;
     }
-
+    
+    .contatti {
+        text-align: center;
+    }
+    
   }
 
   @media screen and (min-width: 768px){
     .allinea  {
         align-items: center;
     }
+
   }
 
 @media screen and (min-width: 992px){

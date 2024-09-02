@@ -84,7 +84,7 @@
 
     <div class="mb-4">
         <label for="description" class="form-label text-uppercase font2 fs-5">Descrizione</label>
-        <textarea placeholder="Inserisci almeno 10 caratteri" id="description" cols="30" rows="10" class="form-control font2 text-black fs-6" wire:model.blur="description"></textarea>
+        <textarea placeholder="Inserisci almeno 10 caratteri" id="description" cols="30" rows="10" class="form-control font2 text-black fs-6 text-center" wire:model.blur="description"></textarea>
         @error('description')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -133,7 +133,7 @@
     
     <div class="mb-4">
         <label for="category" class="form-label text-uppercase font2 fs-5">Categoria</label>
-        <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-5">
+        <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-6">
             <option value="" selected >Seleziona una categoria</option>
             
             @foreach($categories as $category)

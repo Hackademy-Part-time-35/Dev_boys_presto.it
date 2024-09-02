@@ -22,4 +22,4 @@ yarn-error.log
 
 /storage/*.index
 
-google-credentials.json
+google_credential.json

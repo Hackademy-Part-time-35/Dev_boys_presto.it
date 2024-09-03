@@ -47,4 +47,4 @@ class ResizeImage implements ShouldQueue
         )
         ->save($destPath);
     }
-}
+}      

@@ -3,13 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerBtn = document.getElementById('registerBtn');
     const activeBackground = document.getElementById('activeBackground');
 
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
     if (loginBtn && registerBtn && activeBackground) {
         loginBtn.addEventListener('click', function() {
             document.getElementById('loginForm').style.display = 'block';
             document.getElementById('registerForm').style.display = 'none';
             document.getElementById('loginForm').classList.add('fade-in');
             document.getElementById('titolo').innerHTML = "BENTORNATO";
-
+            
             activeBackground.style.transform = 'translateX(0)';  // Ritorna al bottone Login
         });
 
@@ -22,6 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Mostra il form di login di default
-        loginBtn.click();
+        const formType = getQueryParam('form');
+        if (formType === 'register') {
+            registerBtn.click();
+        } else {
+            loginBtn.click();
+        }
     }
 });

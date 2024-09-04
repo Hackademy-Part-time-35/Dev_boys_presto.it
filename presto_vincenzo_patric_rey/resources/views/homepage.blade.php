@@ -43,11 +43,11 @@
                     <h3 class="mb-4 text-uppercase">{{ __('ui.nonLoggato') }}</h3>
                     <p>{{ __('ui.login') }}</p>
                     <button type="button" class="btn bottone mb-3">
-                        <a href="\login" >{{__('ui.buttonLogin')}}</a>
+                        <a href="\login?form=login" >{{__('ui.buttonLogin')}}</a>
                     </button>
                     <p>{{ __('ui.register') }}</p>
                     <button type="button" class="btn bottone">
-                        <a href="\register" >{{ __('ui.buttonRegister') }}</a>
+                        <a href="\login?form=register" >{{ __('ui.buttonRegister') }}</a>
                     </button>
                     @endauth
                 </div>

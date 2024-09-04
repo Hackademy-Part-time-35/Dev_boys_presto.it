@@ -52,8 +52,8 @@
               ACCOUNT
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/login">{{__('ui.buttonLogin')}}</a></li>
-              <li><a class="dropdown-item" href="/register">{{__('ui.buttonRegister')}}</a></li>
+              <li><a class="dropdown-item" href="/login?form=login">{{__('ui.buttonLogin')}}</a></li>
+              <li><a class="dropdown-item" href="/login?form=register">{{__('ui.buttonRegister')}}</a></li>
             </ul>
           </li>
         @endauth

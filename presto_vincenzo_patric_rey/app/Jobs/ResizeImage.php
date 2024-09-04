@@ -10,6 +10,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Spatie\Image\Enums\CropPosition;
 use  Spatie\Image\Enums\Unit;
+use Spatie\Image\Enums\AlignPosition;
 
 class ResizeImage implements ShouldQueue
 {
@@ -38,13 +39,20 @@ class ResizeImage implements ShouldQueue
         Image::load($srcPath)
         ->crop($w, $h, CropPosition::Center)
         ->watermark(
-            base_path('resources/imag/watermark.png'),
-            width: 50,
-            height: 50,
-            paddingX: 5,
-            paddingY: 5,
-            paddingUnit: Unit::Percent
-        )
+            base_path('resources/img/watermark.png'),
+            AlignPosition::Center,
+            alpha: 50, //opacità
+            // dimensioni
+            width: 100,
+            widthUnit: Unit::Percent,
+            height: 100,
+            heightUnit: Unit::Percent,
+            // padding
+            // paddingX: 5,
+            // paddingY: 5,
+            // paddingUnit: Unit::Percent
+
+            )
         ->save($destPath);
     }
-}
+}      

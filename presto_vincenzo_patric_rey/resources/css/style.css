@@ -462,7 +462,7 @@ a{text-decoration: none;}
       calc(var(--p) *  1) calc(var(--p) * -1), 
       calc(var(--p) * -1) calc(var(--p) *  0);
     height: 100%;
-      width: 8vw;
+      width: 6vw;
   }
 
 /* Animazione typewriter */

@@ -17,12 +17,13 @@
         <div class="row height-custom justify-content-center align-items-center pt-5">
             @forelse($articles as $article)
                 <div class="col-12 col-md-3">
+                    <x-success />
                     @auth
                     <div class="container mt-3 col-12 text-end">
-                      <form class=" d-inline ms-2" action="{{route('articles.destroy',$article)}}" method="POST">
+                      <form class=" d-inline ms-2 " action="{{route('articles.destroy',$article)}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class=" btn btn-danger ">X</button>
+                        <button type="submit" class=" btn border-1 bottoneElimina mb-4">X</button>
                       </form>
                     </div>
                     @endauth

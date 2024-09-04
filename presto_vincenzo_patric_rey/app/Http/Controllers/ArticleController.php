@@ -91,6 +91,6 @@ class ArticleController extends Controller implements HasMiddleware
         $article->delete();
       
 
-        return redirect()->back()->with(['error' => 'Articolo eliminato con succeso']);
+        return redirect()->back()->with(['success' => 'Articolo eliminato con succeso']);
     }
 }

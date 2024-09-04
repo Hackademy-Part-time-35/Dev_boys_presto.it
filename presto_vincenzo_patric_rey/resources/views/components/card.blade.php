@@ -11,7 +11,8 @@
         {{-- <a href="{{route('category.category')}}" class="btn bottone2 truncate-text">{{ $article->category->name }}</a> --}}
         <a href="{{ route('category.category', ['category_id' => $article->category->id]) }}" class="btn bottone2 d-block truncate-text mb-2">{{ ucfirst($article->category->name) }}</a>
         <a href="{{route('article.show', $article)}}" class="btn d-block bottone2 ">{{ __('ui.details')}}</a>
-
+       
+       
       </div>
       <p class="nascondi card-subtitle text-body-secondary fw-light fst-italic text-end pt-3">{{$article->user->name}}</p>
     </div>

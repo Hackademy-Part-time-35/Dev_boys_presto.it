@@ -17,9 +17,18 @@
         <div class="row height-custom justify-content-center align-items-center pt-5">
             @forelse($articles as $article)
                 <div class="col-12 col-md-3">
-                    
+                    @auth
+                    <div class="container mt-3 col-12 text-end">
+                      <form class=" d-inline ms-2" action="{{route('articles.destroy',$article)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class=" btn btn-danger ">X</button>
+                      </form>
+                    </div>
+                    @endauth
                     <x-card :article="$article"                          
                          />
+                        
                 </div>
             @empty
                 <div class="col-12">

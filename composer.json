@@ -2,6 +2,7 @@
     "require": {
         "laravel/scout": "^10.11",
         "outhebox/blade-flags": "^1.5",
-        "spatie/image": "^3.7"
+        "spatie/image": "^3.7",
+        "google/cloud-vision": "^1.9"
     }
 }

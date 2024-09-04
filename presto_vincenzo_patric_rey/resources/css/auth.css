@@ -1,0 +1,53 @@
+/* bottoni login/register */
+.form-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form-transition.fade-in {
+    opacity: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.card-header button {
+    flex: 1;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.active-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 95, 20); /* Colore con trasparenza */
+    transition: transform 0.5s ease;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#loginBtn {
+    margin-right: auto;
+}
+
+#registerBtn {
+    margin-left: auto;
+}
+
+.card{
+    box-shadow: 20px 20px 20px rgba(6, 0, 0, 0.589);
+}
+
+.card:hover{
+    box-shadow: 20px 20px 20px rgba(252, 141, 22, 0.638);
+}

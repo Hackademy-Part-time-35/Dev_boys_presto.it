@@ -30,10 +30,10 @@
     left: 0;
     height: 100%;
     width: 50%;
-    background-color: rgb(255, 95, 20); /* Colore con trasparenza */
+    background-color: var(--myTextSecondary); /* Colore con trasparenza */
     transition: transform 0.5s ease;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 #loginBtn {
@@ -45,9 +45,10 @@
 }
 
 .card{
-    box-shadow: 20px 20px 20px rgba(6, 0, 0, 0.589);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .card:hover{
-    box-shadow: 20px 20px 20px rgba(252, 141, 22, 0.638);
+    transition: all 0.5s;
+    box-shadow: var(--myTextSecondary) 0px 30px 90px;
 }

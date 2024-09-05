@@ -10,7 +10,7 @@
     <div class="col-12 mt-5 mb-4">
        <h1 class="fontTitolo text-uppercase">{{$article->title}}</h1>
     </div>
-    <div class="row height-custom justify-content-center align-items-center pt-5 pb-4 bg-dark text-white rounded-4">
+    <div class="row height-custom justify-content-center align-items-center pt-5 pb-4 bg-dark text-white rounded-0">
       <div class="col-12 col-md-6 mb-3">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
@@ -20,7 +20,7 @@
           </div>
          <div class="carousel-inner">
           @if ($article->images->count() > 0)
-          <div class="carousel-inner shadow-lg rounded-0">
+          <div class="carousel-inner shadow-lg">
             @foreach ($article->images as $key => $image)
               <div class="carousel-item @if ($loop->first) active @endif">
                 <img src="{{ $image->getUrl(500, 300) }}" class="d-block w-100 rounded shadow" alt="Immagine {{ $key + 1 }} dell'articolo {{ $article->title }}">
@@ -63,8 +63,9 @@
         <div class="fst-italic">
           <h3 class="font2 fs-5 fw-normal text-uppercase">Autore: </h3>
           <p class="fs-6 fw-light">{{$article->user->name}}</p>
-        </div>   
-    </div>
+        </div> 
+      </div>
+    <button class="btn btn-success w-25 rounded-0 mt-4">Acquista</button>
     </div>
   </div>
  </div>

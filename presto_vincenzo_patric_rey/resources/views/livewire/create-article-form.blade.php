@@ -76,7 +76,7 @@
 
     <div class="mb-4">
         <label for="title" class="form-label text-uppercase font2 fs-5">Titolo</label>
-        <input placeholder="Inserisci almeno 5 caratteri" type="text" class="form-control font2 text-black fs-6 text-center" id="title" wire:model.blur="title">
+        <input placeholder="Inserisci almeno 5 caratteri" type="text" class="form-control font2 text-black fs-6 text-center rounded-0" id="title" wire:model.blur="title">
         @error('title')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -84,7 +84,7 @@
 
     <div class="mb-4">
         <label for="description" class="form-label text-uppercase font2 fs-5">Descrizione</label>
-        <textarea placeholder="Inserisci almeno 10 caratteri" id="description" cols="30" rows="10" class="form-control font2 text-black fs-6 text-center" wire:model.blur="description"></textarea>
+        <textarea placeholder="Inserisci almeno 10 caratteri" id="description" cols="30" rows="10" class="form-control font2 text-black fs-6 text-center rounded-0" wire:model.blur="description"></textarea>
         @error('description')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -92,7 +92,7 @@
 
     <div class="mb-4">
         <label for="price" class="form-label text-uppercase font2 fs-5">Prezzo</label>
-        <input placeholder="Inserisci qui il prezzo" type="text" class="form-control font2 text-black fs-6 text-center" id="price" wire:model.blur="price">
+        <input placeholder="Inserisci qui il prezzo" type="text" class="form-control font2 text-black fs-6 text-center rounded-0" id="price" wire:model.blur="price">
         @error('price')
             <P class="fts-italis text-danger">{{$message}} </P>
         @enderror
@@ -102,7 +102,7 @@
     <div class="mb-4">
         <label for="file" class="form-label text-uppercase font2 fs-5">Immagine</label>
         <input type="file" wire:model.live="temporary_images" multiple
-        class="font2 text-black fs-6 text-uppercase form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img/">
+        class="rounded-0 font2 text-black fs-6 text-uppercase form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img/">
         @error('temporary_images.*')
             <p class="fst-italic text-danger">{{ $message }}</p>
         @enderror  
@@ -120,8 +120,8 @@
                                 <div class="img-preview mx-auto shadow rounded"
                                     style="background-image: url({{ $image->temporaryUrl() }});">
                                 </div>
-                                <button type="button" class=" btn mt-2 btn-danger"
-                                wire:click="removeImage({{ $key }})" >Rimuovi</button>
+                                <button type="button" class=" btn mt-2 btn-danger rounded-0"
+                                wire:click="removeImage({{ $key }})" ><i class="fa-regular fa-trash-can"></i></button>
                             </div>
                         @endforeach
 
@@ -133,7 +133,7 @@
     
     <div class="mb-4">
         <label for="category" class="form-label text-uppercase font2 fs-5">Categoria</label>
-        <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-6">
+        <select id="category" wire:model.blur="category" class="form-control text-uppercase text-center font2 text-black fs-6 rounded-0">
             <option value="" selected >Seleziona una categoria</option>
             
             @foreach($categories as $category)

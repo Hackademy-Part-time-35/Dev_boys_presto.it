@@ -133,6 +133,10 @@ button > a{
     color:white;
 }
 
+.bottoneLogin {
+    border-radius: 0;
+}
+
 :hover.bottone3 {
     background-color: var(--myBackgroundPrimary);
     color: black;
@@ -488,3 +492,9 @@ a{text-decoration: none;}
     to { border-color: var(--myTextPrimary)};
   }
   
+
+  /* Bottone Elimina */
+
+  .bottoneElimina {
+    
+  }

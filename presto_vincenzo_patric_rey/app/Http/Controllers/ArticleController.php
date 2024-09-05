@@ -44,7 +44,7 @@ class ArticleController extends Controller implements HasMiddleware
     {  
          $title ='Creazione articoli';
         // return view('articles.create',['title'=>$title]);
-        return view('articles.create', ['categories' => \App\Models\Category::all(), 'title' => $title]);
+        return view('articles.create', ['categories' =>Category::all(), 'title' => $title]);
     }
 
 

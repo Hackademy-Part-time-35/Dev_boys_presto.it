@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg px-lg-0 px-xs-2 border-bottom sfondo fixed-top py-3">
   <div class="container-fluid myNavbar">
-    <a class="navbar-brand font1" href="/">PRESTO.<span class="fontIt">it</span><div id="rettangolo" class="ms-2 d-inline-block"></div></a>
+  
+    <a class="navbar-brand font1" href="/"><img src="/img/logo Presto.png" alt="" class="img-fluid logo">PRESTO.<span class="fontIt">it</span><div id="rettangolo" class="ms-2 d-inline-block"></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

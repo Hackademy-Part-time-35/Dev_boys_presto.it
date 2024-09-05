@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('loginForm').style.display = 'block';
             document.getElementById('registerForm').style.display = 'none';
             document.getElementById('loginForm').classList.add('fade-in');
-            document.getElementById('titolo').innerHTML = "BENTORNATO";
+            document.getElementById('titolo').innerHTML = "BENTORNAT*";
             
             activeBackground.style.transform = 'translateX(0)';  // Ritorna al bottone Login
         });

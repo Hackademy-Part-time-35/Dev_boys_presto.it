@@ -39,13 +39,13 @@ class ResizeImage implements ShouldQueue
         Image::load($srcPath)
         ->crop($w, $h, CropPosition::Center)
         ->watermark(
-            base_path('resources/img/watermark.png'),
+            base_path('resources/img/logoPresto.png'),
             AlignPosition::Center,
-            alpha: 50, //opacità
+            alpha: 30, //opacità
             // dimensioni
-            width: 100,
+            width: 30,
             widthUnit: Unit::Percent,
-            height: 100,
+            height: 30,
             heightUnit: Unit::Percent,
             // padding
             // paddingX: 5,

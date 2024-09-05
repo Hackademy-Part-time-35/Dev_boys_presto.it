@@ -13,7 +13,17 @@
 
 }
 
+/* logo */
+
+.logo {
+    width:50px;
+    height: auto;
+    margin-right: 1rem;
+
+}
+
 @media (hover: hover){
+
     .carte{
         transition: all 0.3s;
     }
@@ -202,6 +212,10 @@ a{text-decoration: none;}
 
     .immagine {
         display:none;
+    }
+
+    .logo {
+        display: none;
     }
 
     .immagine2 {

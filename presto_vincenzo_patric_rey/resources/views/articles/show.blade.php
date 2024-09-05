@@ -13,13 +13,18 @@
     <div class="row height-custom justify-content-center align-items-center pt-5 pb-4 bg-dark text-white rounded-0">
       <div class="col-12 col-md-6 mb-3">
         <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
+          {{-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div> --}}
+          <div class="carousel-indicators">
+            @foreach ($article->images as $key => $image)
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $key }}" class="{{ $key === 0 ? 'active' : '' }}" aria-current="{{ $key === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $key + 1 }}"></button>
+            @endforeach
           </div>
          <div class="carousel-inner">
           @if ($article->images->count() > 0)

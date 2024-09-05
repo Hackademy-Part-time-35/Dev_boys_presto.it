@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Presto</title>
+    <link rel="icon" type="image/x-icon" href="/img/logoPresto.png">
     @vite (['resource/css/app.css', 'resource/js/app.js'])
     
     <!-- Fonts -->

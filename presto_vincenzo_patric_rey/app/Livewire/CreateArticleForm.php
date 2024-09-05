@@ -15,16 +15,16 @@ use App\Jobs\RemoveFaces;
 class CreateArticleForm extends Component
 {
     use WithFileUploads;
-    
+
     public $images = [];
     #[Validate('max:6')]
     public $temporary_images;
 
-    #[Validate('required|min:5')]
+    #[Validate('required|min:5|max:25')]
     public $title;
-    #[Validate('required|min:10')]
+    #[Validate('required|min:10|max:250')]
     public $description;
-    #[Validate('required|numeric')]
+    #[Validate('required|numeric|max:10')]
     public $price;
     #[Validate('required')]
     public $category;

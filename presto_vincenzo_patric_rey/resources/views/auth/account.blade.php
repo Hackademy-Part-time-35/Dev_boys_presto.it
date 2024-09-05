@@ -21,11 +21,11 @@
             @forelse($articles as $article)
                 <div class="col-12 col-md-3">
                     @auth
-                    <div class="container mt-3 col-12 text-end">
+                    <div class="container mt-3 col-12 text-center">
                       <form class=" d-inline ms-2 " action="{{route('articles.destroy',$article)}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger m-3 me-0 rounded-0"><i class="fa-regular fa-trash-can"></i></button>
+                        <button type="submit" class="btn btn-danger my-3 rounded-0"><i class="fa-regular fa-trash-can"></i></button>
                       </form>
                     </div>
                     @endauth

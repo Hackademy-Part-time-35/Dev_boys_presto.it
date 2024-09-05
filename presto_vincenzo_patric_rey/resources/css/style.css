@@ -491,10 +491,3 @@ a{text-decoration: none;}
     from { border-color: transparent }
     to { border-color: var(--myTextPrimary)};
   }
-  
-
-  /* Bottone Elimina */
-
-  .bottoneElimina {
-    
-  }

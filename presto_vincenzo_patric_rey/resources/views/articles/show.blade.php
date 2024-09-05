@@ -38,7 +38,7 @@
                 </button>
               @endif
           @else
-            <img src="https://picsum.photos/500/300" alt="Nessuna foto inserita dall'utente" class="d-block w-100 rounded shadow">
+            <img src="/img/fotonera.png" alt="Nessuna foto inserita dall'utente" class="d-block w-100 rounded shadow">
           @endif
           </div>
   </div>  
